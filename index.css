@@ -3,11 +3,16 @@
 @import url("https://fonts.googleapis.com/css?family=Questrial");
 
 */
-
+* {
+  padding: 0;
+  margin: 0;
+}
 body {
-  background-color: #f9f6efff;
-  margin: 5%, 5%, 5%, 5%;
   font-family: Chivo;
+}
+/* SECTION 1*/
+#section1 {
+  background-color: #f9f6efff;
 }
 nav {
   padding-top: 15px;
@@ -20,8 +25,6 @@ nav {
 }
 .pages {
   list-style: none;
-  margin: 0;
-  padding: 0;
   overflow: hidden;
   display: flex;
   font-style: normal;
@@ -33,22 +36,22 @@ nav {
   font-weight: 400;
 }
 .pageLink:link {
-  font-size: 15px;
+  font-size: 22px;
   color: #A9A9A9;
   text-decoration-line: none;
 }
 .currPage:link {
-  font-size: 15px;
+  font-size: 22px;
   color: #1d1d1f;
   font-weight: bold;
   text-decoration-line: none;
 }
 .pageLink:hover { /*TODO: hover color not working*/
-  font-size: 20px;
+  font-size: 25px;
   color: #1d1d1f;
 }
 .currPage:hover {
-  font-size: 20px;
+  font-size: 25px;
   color: #1d1d1f;
 }
 .pageLink:visited {
@@ -63,21 +66,51 @@ nav {
 .currPage:active {
   color: #1d1d1f;
 }
-#aboutMe {
-  margin-top: 15%;
-  margin-bottom: 15%;  
+/*SECTION 2*/
+#section2 {
+  background-color: #f9f6efff;
+}
+#introduction {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .intro {
+  margin-top: 15%;
+  margin-bottom: 15%;  
   margin-left: 10%;
   margin-right: 10%;
   font-size: 30px;
   color: #1d1d1f;
 } 
 #picture {
+  margin-top: 15%;
+  margin-bottom: 15%;  
   margin-right: 10%;
   height: 300px;
   width: 300px;
 }
+#memo {
+  margin-top: -1%;
+  text-align: center;
+  font-size: 17px;
+  color: #A9A9A9;
+}
+/*SECTION 3*/
+#section3 {
+  background-color: #FFFFFF;
+}
+#aboutMe {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: center;
+}
+#aboutMe h2 {
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+#aboutMe p {
+  font-size: 22px;
+  padding-bottom: 30px;
+}
+
