@@ -76,19 +76,19 @@ nav {
   justify-content: space-between;
 }
 .intro {
-  margin-top: 15%;
-  margin-bottom: 15%;  
+  margin-top: 10%;
+  margin-bottom: 10%;  
   margin-left: 10%;
   margin-right: 10%;
   font-size: 30px;
   color: #1d1d1f;
 } 
 #picture {
-  margin-top: 15%;
-  margin-bottom: 15%;  
+  margin-top: 11.5%;
+  margin-bottom: 11.5%;  
   margin-right: 10%;
-  height: 300px;
-  width: 300px;
+  height: 400px;
+  width: 400px;
 }
 #memo {
   margin-top: -1%;
@@ -112,5 +112,7 @@ nav {
 #aboutMe p {
   font-size: 22px;
   padding-bottom: 30px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
