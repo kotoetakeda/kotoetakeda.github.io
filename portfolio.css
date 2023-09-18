@@ -73,7 +73,7 @@ main {
 .portfolio img {
   height: 500px;
   width: 400px;
-  padding-bottom: 10px;
+  padding-bottom: 3px;
 }
 .portfolio a {
   text-decoration: none;
