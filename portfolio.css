@@ -4,7 +4,16 @@
 }
 body {
   font-family: Chivo;
+}
+/*SECTION 1*/
+.section1 {
   background-color: #f9f6efff;
+}
+#secondSection {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 3%;
+  padding-bottom: 8%;
 }
 nav {
   padding-top: 15px;
@@ -40,11 +49,9 @@ nav {
 }
 .pageLink:hover { /*TODO: hover color not working*/
   font-size: 25px;
-  color: #1d1d1f;
 }
 .currPage:hover {
   font-size: 25px;
-  color: #1d1d1f;
 }
 .pageLink:visited {
   color: #A9A9A9;
@@ -58,11 +65,6 @@ nav {
 .currPage:active {
   color: #1d1d1f;
 }
-main {
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 5%;
-}
 #gallery {
   column-count: 3;
   column-gap: 100px;
@@ -70,27 +72,56 @@ main {
 .portfolio {
   text-align: center;
 }
+.section1 h1 {
+  padding-bottom: 5%;
+  font-size: 70px;
+}
 .portfolio img {
-  height: 500px;
-  width: 400px;
-  padding-bottom: 3px;
+  height: 400px;
+  width: 300px;
+  padding-bottom: 4px;
+  border-radius: 50px;
 }
 .portfolio a {
   text-decoration: none;
   color: #333;
 }
-/*
-.column {
-  float: left;
-  width: 100%;
+.portfolio figcaption {
+  text-align: center;
 }
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+/*SECTION 2*/
+#section2 {
+  background-color: white;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+  padding-bottom: 5%;
 }
-.portfolio img {
-  height: 350px;
-  width: 500px;
+#section2 h1 {
+  padding-bottom: 5%;
+  font-size: 40px;
 }
-*/
+/*SECTION 3*/
+#section3 {
+  background-color: #f9f6efff;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+  padding-bottom: 5%;
+}
+#section3 h1 {
+  padding-bottom: 5%;
+  font-size: 40px;
+}
+/*SECTION 4*/
+#section4 {
+  background-color: white;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+  padding-bottom: 5%;
+}
+#section4 h1 {
+  padding-bottom: 5%;
+  font-size: 40px;
+}

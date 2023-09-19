@@ -1,8 +1,3 @@
-/*
-@import url("https://fonts.googleapis.com/css?family=Poppins");
-@import url("https://fonts.googleapis.com/css?family=Questrial");
-
-*/
 * {
   padding: 0;
   margin: 0;
@@ -18,7 +13,7 @@ nav {
   padding-top: 15px;
   padding-left: 15px;
   padding-right: 15px;
-  position: sticky;  /*TODO*/
+  position: sticky;  /*If want sticky: write fixed*/
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -48,11 +43,9 @@ nav {
 }
 .pageLink:hover { /*TODO: hover color not working*/
   font-size: 25px;
-  color: #1d1d1f;
 }
 .currPage:hover {
   font-size: 25px;
-  color: #1d1d1f;
 }
 .pageLink:visited {
   color: #A9A9A9;
@@ -80,15 +73,21 @@ nav {
   margin-bottom: 10%;  
   margin-left: 10%;
   margin-right: 10%;
-  font-size: 30px;
   color: #1d1d1f;
 } 
+.intro h4 {
+  font-size: 70px;
+}
+.intro p {
+  font-size: 30px;
+}
 #picture {
   margin-top: 11.5%;
   margin-bottom: 11.5%;  
   margin-right: 10%;
   height: 400px;
   width: 400px;
+  border-radius: 50px;
 }
 #memo {
   margin-top: -1%;

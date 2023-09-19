@@ -4,6 +4,17 @@
         <meta charset="UTF-8">
         <title>Kotoe Takeda's Website</title>
         <link rel="stylesheet" href="contact.css"> 
+        <script src="contact.js"></script>
+
+        <script
+          type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+          (function () {
+            emailjs.init("JVvkuGQUcVqr53bpI");
+          })();
+        </script>
     </head>
     <body>
         <nav class="navigation">
@@ -18,12 +29,24 @@
             </ul>
         </nav>
         <main>
-            <h2>Contact ----------&gt; </h2>
-            <p id="contact">
-                <a title="email: ktakeda3@gatech.edu" href="mailto: ktakeda3@gatech.edu" target="_blank" class="logoLink"><img class="logo" src="gmail Logo.png" alt="Gmail logo"></a>
-                <a title="username: kotoetakeda" href="https://www.linkedin.com/in/kotoetakeda/" target="_blank" class="logoLink"><img class="logo" src="linkedin logo.png" alt="LinkedIn logo"></a>
-                <a title="username: kotoetakeda" href="https://github.com/kotoetakeda?tab=repositories" target="_blank" class="logoLink"><img class="logo" src="github logo.png" alt="GitHub logo"></a>
-            </p>
+            <h1>Let's Connect</h1>
+            <form>
+                <div class="row">
+                    <div class="column" id="inputFields">
+                        <input id="name" type="text" required placeholder="Full Name *"><br>
+                        <input id="email" type="text" required placeholder="Email *"><br>
+                        <input id="message" type="text" placeholder="Message"><br>
+                        <br>
+                        <button type="sendButton" onclick="sendMail()">Send</button>
+                    </div>
+                    <div class="column">
+                        <p>Any feedback, suggestion, and comment is welcomed!</p>
+                        <br><br><br>
+                            <a title="email: ktakeda3@gatech.edu" href="mailto: ktakeda3@gatech.edu" target="_blank" class="logoLink"><img class="logoPic" id="mailPic" src="email.png" alt="Gmail logo"></a>
+                            <a title="username: kotoetakeda" href="https://www.linkedin.com/in/kotoetakeda/" target="_blank" class="logoLink"><img class="logoPic" src="linkedin.png" alt="LinkedIn logo"></a>
+                            <a title="username: kotoetakeda" href="https://github.com/kotoetakeda?tab=repositories" target="_blank" class="logoLink"><img class="logoPic" src="github logo.png" alt="GitHub logo"></a>
+                    </div>
+            </form> 
         </main>
     </body>
 </html>
