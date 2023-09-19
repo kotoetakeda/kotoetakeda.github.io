@@ -80,13 +80,13 @@ h1 {
 form {
   height: 100%;
   width: 100%;
-  border: 1px solid #C47530;
-  background-color: white;
+  border: 2px solid #C47530;
   text-align: center;
   font-size: 22px;
   border-radius: 12px;
+  border-style: dotted;
 }
-input {
+.field {
   width: 50%;
   text-align: left;
   padding: 12px 20px;
@@ -95,6 +95,8 @@ input {
   font-size: 22px;
   font-family: Chivo;
   border-radius: 12px;
+  border: 2px solid #C47530;
+  border-style: none none solid none;
 }
 input:focus {
   border: 2px solid black;
@@ -103,7 +105,7 @@ input:focus {
   padding-top: 5px;
   padding-bottom: 150px;
 }
-button {
+#submit {
   font-size: 22px;
   padding-top: 5px;
   padding-bottom: 5px;
