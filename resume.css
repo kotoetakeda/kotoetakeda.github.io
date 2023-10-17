@@ -38,7 +38,6 @@ nav {
   color: #1d1d1f;
   font-weight: bold;
   text-decoration-line: none;
-  font-weight: 400;
 }
 .pageLink:hover { /*TODO: hover color not working*/
   font-size: 25px;

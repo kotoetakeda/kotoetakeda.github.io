@@ -14,7 +14,7 @@ body {
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 3%;
-  padding-bottom: 8%;
+  padding-bottom: 7%;
 }
 nav {
   padding-top: 15px;
@@ -79,9 +79,15 @@ nav {
   font-size: 70px;
 }
 .portfolio img {
+<<<<<<< HEAD
   height: 500px;
   width: 700px;
   margin-bottom:3%;
+=======
+  height: 400px;
+  width: 300px;
+  margin-bottom: 30px;
+>>>>>>> d88e5b665141631792d609b8fc675ca792d56c37
   border-radius: 50px;
 }
 .portfolio img:hover {
