@@ -72,6 +72,8 @@ nav {
 
 }*/
 .portfolio {
+  margin-bottom: 5%;
+  margin-top: 5%;
   text-align: center;
 }
 .section1 h1 {
@@ -85,8 +87,8 @@ nav {
   border-radius: 50px;
 }
 .portfolio img:hover {
-  height: 600px;
-  width: 800px;
+  height: 510px;
+  width: 710px;
 }
 .portfolio a {
   text-decoration: none;
@@ -96,13 +98,33 @@ nav {
   text-align: center;
   margin-left: 21%;
   margin-right: 21%;
-  margin-bottom: 100px;
 }
 .portfolio figcaption p {
   font-size: 25px;
 }
 .portfolio figcaption h2 {
   font-size: 50px;
+}
+button {
+  background-color: #C47530;
+  color: white;
+  border-radius: 50px;
+  padding: 5px 10px;
+  border-width: 0px;
+}
+hr {
+  background-color: lightgray;
+  height: 1px;
+  border-width: 0px;
+}
+#stressApp {
+  margin-top: 0px;
+}
+#marta figcaption {
+  margin-bottom: 0px;
+}
+#marta {
+  margin-bottom: 0px;
 }
 /*
 figure .caption {
