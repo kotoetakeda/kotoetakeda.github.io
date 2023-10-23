@@ -1,51 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Kotoe Takeda's Website</title>
-        <link rel="stylesheet" href="index.css"> 
-    </head>
-    <body>
-        <div id="section1">
-            <nav class="navigation">
-                <div>
-                    <a href="index.html" class="logo">Kotoe Takeda</a>
-                </div>
-                <ul class="pages">
-                    <li><a href="index.html" class="currPage">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                    <li><a href="portfolio.html" class="pageLink">Portfolio</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                    <li><a href="resume.html" class="pageLink">Resume</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                    <li><a href="contact.html" class="pageLink">Contact</a></li>
-                </ul>
-            </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kotoe Takeda's Website</title>
+    <link rel="icon" type="image/x-icon" href="profilePicture.JPG">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav id="navigation">
+        <a href="index.html" class="logo">Kotoe Takeda</a>
+        <a href="index.html" id="home" class="navLink">Home</a>
+        <a href="portfolio.html" id="portfolio" class="navLink">Portfolio</a>
+        <a href="resume.html" id="resume" class="navLink">Resume</a>
+        <a href="contact.html" id="contact" class="navLink">Contact</a>
+    </nav>
+    <main>
+        <section class="textArea">
+            <h4>Hi I'm Kotoe!</h4>
+    
+            <p>I am a 3rd year undergraduate student at Georgia Institute of Technology majoring in Computer Science with concentrations in people and media.
+            <br><br>
+            With a background in software engineering and UX/UI, I find great satisfaction in bringing my ideas to life and placing them into the hands of diverse users. 
+                Seeing people effortlessly enjoy and engage with my creations is what drives me to continue innovating for more solutions that meet people's needs and challenges.
+            <br><br>
+            My goal is to design everyday items that seamlessly integrate into people's lives, as if they were there all along.</p>
+        </section>
+        <div class="img">
+            <img id="picture" src="profilePicture.JPG" alt="profile photo">
         </div>
-            <main>
-                <!--<div id="section2">-->
-                    <div id="introduction">
-                        <div class="intro">
-                            <h4>Hi I'm Kotoe!</h4>
-                            <br>
-                            <p>I am a 3rd year undergraduate student at Georgia Institute of Technology majoring in in Computer Science with concentrations in people and media.</p>
-                            <br>
-                            <p>With a background in software engineering and UX/UI, I find great satisfaction in bringing my ideas to life and placing them into the hands of diverse users. 
-                               Seeing people effortlessly enjoy and engage with my creations is what drives me to continue innovating for more solutions that meet people's needs and challenges.</p>
-                            <br>
-                            <p>My goal is to design everyday items that seamlessly integrate into people's lives, as if they were there all along.</p>
-                        </div>
-                        <img id="picture" src="profilePicture.JPG" alt="profile photo">
-                    </div>
-                    <!--<p id="memo">&#8595;&nbsp;&nbsp;Scroll down for more information about me!&nbsp;&nbsp;&#8595;</p>
-                    <br>
-                </div>
-                
-                <div id="section3">
-                    <div id="aboutMe">
-                        <h2>About Me</h2>
-                        <p>My name is Kotoe Takeda. I am originally from Japan, and am currently in Atlanta, GA.</p>
-                        <p>With experience in software engineering and UX/UI, I enjoy the process of seeing my ideas come to life and go in the hands of a variety of users. I love seeing people enjoy and interact with my products everyday effortlessly.</p> 
-                        <p>My goal is to create more everyday objects that can be used by as many people as possible.</p>
-                    </div>
-                </div>-->
-            </main>  
-    </body>
+    </main>
+</body>
 </html>
