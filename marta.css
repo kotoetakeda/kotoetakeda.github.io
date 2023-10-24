@@ -110,7 +110,7 @@ a {
         text-align: left;
         line-height: 100px;
         font-size: 22px;
-        padding-left: 30px;
+        padding-left: 5px;
     }
     #processes a:hover, .tag:hover {
         font-weight: bold;
@@ -118,7 +118,7 @@ a {
         list-style-position: inside;
     }
     #processes #analysis_tag {
-        font-size: 35px;
+        font-size: 32px;
         font-weight: bold;
         list-style: circle;
         list-style-position: inside;
