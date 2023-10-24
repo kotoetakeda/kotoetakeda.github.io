@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kotoe Takeda's Website</title>
+    <link rel="icon" type="image/x-icon" href="profilePicture.JPG">
     <link rel="stylesheet" href="stressApp.css">
+    <script src="stressApp.js"></script>
 </head>
 <body>
     <nav id="navigation">
@@ -43,49 +45,83 @@
         </section>
         <hr>
         <section class="sec4">
-            <h3>Process</h3>
-            <h4>Competitive Analysis</h4>
-            <p>
-                Mental health issues have become widely recognized as a major problem in modern society. 
-                Correspondingly, there have been attempts to use technology for improving mental health—primarily 
-                in the format of smartphone apps. Here, we categorize some of the existing solutions and analyze 
-                their limitations.<br><br>
-                <i><u>Mindfulness and breathing exercise apps</u></i> utilize proven biological/neuroscientific mechanisms 
-                of reducing anxiety to help the user manage their feelings and behaviors. While they create positive 
-                interventions with statistically significant outcomes, they have limitations. They are analogous to a 
-                first-aid treatment in that they alleviate the immediate feelings and mental states of users but do not 
-                mitigate the root cause of stress or the trigger of anxiety. Second, they utilize anxiety-reducing 
-                mechanisms based on human physiology, meaning they are fundamentally non-interactive—the apps cannot 
-                choose more effective ways of intervention according to different causes of anxiety. Third, the usage 
-                is strictly voluntary—the positive result of the app is directly proportional to user effort, and thus 
-                may not help when users are under extreme circumstances, unable to gather motivation or desire to better 
-                their conditions. 
-                <br><br>
-                Some apps, such as Headspace, do address such limitations by incorporating informative aspects 
-                (for long-term improvement) and giving users the ability to choose an exercise from multiple options 
-                (providing interactivity/customization).
-                <br><br>
-                <i><u>Cybertherapy-based apps</u></i> replicate aspects of conventional mental health counseling. An example is 
-                BetterHelp, which functions very similarly to MAHI discussed earlier in class—numerical inputs and 
-                text entries from users are reviewed by professionals, who then provide feedback back to users. However, 
-                the difference in problem domain raises limitations and concerns that were not present in MAHI: descriptions of 
-                feelings and behaviors involve more subtlety in communication than descriptions of diet, which consist largely of 
-                factual information, and cannot be fully conveyed as text. Additionally, confidentiality of sensitive information 
-                is of particular importance in the space of mental health. The anonymous nature of the internet may cause users to 
-                be less assured of confidentiality and reduce the effectiveness of therapy.  
-                <br><br>
-                <i><u>Conventional mental health resources</u></i> are not categorically similar to our solution. In fact, conventional resources are 
-                consistently effective in reducing anxiety and are quite fine as-is. However, personal therapy and mental health facilities are 
-                inaccessible to a large portion of the population, due to cultural and financial barriers—which we believe is one of the main 
-                reasons why solutions based on personal health informatics are needed. (It is worth mentioning that conventional mental health 
-                resources are not perfect, either—the two can be complementary.)
-                <br><br>
-                <i><u>Personal journaling</u></i>, again, would normally not be classified into the same category as our solution. However, there is an important 
-                similarity: personal journaling serves to provide opportunities for reflection and to promote self-awareness—which is precisely what 
-                our app aims to achieve. Theoretically, the insights we will offer to users are in fact achievable by users alone through journaling 
-                and introspection; however, the effort required to do so in a complete and thorough manner will be tremendous. Thus, personal journaling 
-                demonstrates the burdensomeness of intensive manual tracking, even given its effectiveness.
-            </p>
+            <h3>Design Process</h3>
+            <div id="timeline">
+                <ul id="processes">
+                    <li class="tag" id="analysis_tag"><a href="#analysis" onclick="reset();selection('analysis')">Competitive Analysis</a></li>
+                    <li class="tag" id="research_tag"><a href="#research" onclick="reset();selection('research')">User Research</a></li>
+                    <li class="tag" id="lowfi_tag"><a href="#lowfi" onclick="reset();selection('lowfi')">Low-Fidelity Prototype</a></li>
+                    <li class="tag" id="hifi_tag"><a href="#hifi" onclick="reset();selection('hifi')">High-Fidelity Prototype</a></li>
+                </ul>
+                <ul id="description">
+                    <li class="desc" id="analysis">
+                        <div>
+                            <p>
+                                Mental health issues have become widely recognized as a major problem in modern society. 
+                                Correspondingly, there have been attempts to use technology for improving mental health—primarily 
+                                in the format of smartphone apps. Here, we categorize some of the existing solutions and analyze 
+                                their limitations.<br><br>
+                                <i><u>Mindfulness and breathing exercise apps</u></i> utilize proven biological/neuroscientific mechanisms 
+                                of reducing anxiety to help the user manage their feelings and behaviors. While they create positive 
+                                interventions with statistically significant outcomes, they have limitations. They are analogous to a 
+                                first-aid treatment in that they alleviate the immediate feelings and mental states of users but do not 
+                                mitigate the root cause of stress or the trigger of anxiety. Second, they utilize anxiety-reducing 
+                                mechanisms based on human physiology, meaning they are fundamentally non-interactive—the apps cannot 
+                                choose more effective ways of intervention according to different causes of anxiety. Third, the usage 
+                                is strictly voluntary—the positive result of the app is directly proportional to user effort, and thus 
+                                may not help when users are under extreme circumstances, unable to gather motivation or desire to better 
+                                their conditions. 
+                                <br><br>
+                                Some apps, such as Headspace, do address such limitations by incorporating informative aspects 
+                                (for long-term improvement) and giving users the ability to choose an exercise from multiple options 
+                                (providing interactivity/customization).
+                                <br><br>
+                                <i><u>Cybertherapy-based apps</u></i> replicate aspects of conventional mental health counseling. An example is 
+                                BetterHelp, which functions very similarly to MAHI discussed earlier in class—numerical inputs and 
+                                text entries from users are reviewed by professionals, who then provide feedback back to users. However, 
+                                the difference in problem domain raises limitations and concerns that were not present in MAHI: descriptions of 
+                                feelings and behaviors involve more subtlety in communication than descriptions of diet, which consist largely of 
+                                factual information, and cannot be fully conveyed as text. Additionally, confidentiality of sensitive information 
+                                is of particular importance in the space of mental health. The anonymous nature of the internet may cause users to 
+                                be less assured of confidentiality and reduce the effectiveness of therapy.  
+                                <br><br>
+                                <i><u>Conventional mental health resources</u></i> are not categorically similar to our solution. In fact, conventional resources are 
+                                consistently effective in reducing anxiety and are quite fine as-is. However, personal therapy and mental health facilities are 
+                                inaccessible to a large portion of the population, due to cultural and financial barriers—which we believe is one of the main 
+                                reasons why solutions based on personal health informatics are needed. (It is worth mentioning that conventional mental health 
+                                resources are not perfect, either—the two can be complementary.)
+                                <br><br>
+                                <i><u>Personal journaling</u></i>, again, would normally not be classified into the same category as our solution. However, there is an important 
+                                similarity: personal journaling serves to provide opportunities for reflection and to promote self-awareness—which is precisely what 
+                                our app aims to achieve. Theoretically, the insights we will offer to users are in fact achievable by users alone through journaling 
+                                and introspection; however, the effort required to do so in a complete and thorough manner will be tremendous. Thus, personal journaling 
+                                demonstrates the burdensomeness of intensive manual tracking, even given its effectiveness.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="desc" id="research">
+                        <div>
+                            <p>
+                                Research
+                            </p>
+                        </div>
+                    </li>
+                    <li class="desc" id="lowfi">
+                        <div>
+                            <p>
+                                LowFi
+                            </p>
+                        </div>
+                    </li>
+                    <li class="desc" id="hifi">
+                        <div>
+                            <p>
+                                HiFi
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
         <hr>
         <section class="sec5">
