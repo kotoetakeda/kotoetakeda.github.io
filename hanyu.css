@@ -67,6 +67,7 @@ p {
     font-size: 22px;
     margin: 2% 15% 5%;
     text-align: justify;
+    line-height: 1.5;
 }
 .sec1 p {
     margin-top: 1%;
@@ -81,7 +82,10 @@ h3 {
     font-size: 40px;
     margin-top: 2%;
 }
-/* --------START HERE-------------- */
+mark {
+    background-color: rgba(129, 178, 154, 0.4);
+}
+/* --------SELECTION FORMATTING BELOW-------------- */
 a {
 	color: #81B29A;
 	text-decoration: none;
@@ -141,3 +145,4 @@ a {
     #description #analysis {
         display: block;
     }
+    /* --------SELECTION FORMATTING ABOVE-------------- */
