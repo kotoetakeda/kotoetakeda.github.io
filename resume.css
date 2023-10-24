@@ -50,6 +50,7 @@ nav {
 }
 #resume {
   grid-column: 18 / 19;
+  font-weight: bold;
 }
 #contact {
   grid-column: 19 / 20;

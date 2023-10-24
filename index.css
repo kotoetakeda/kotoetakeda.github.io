@@ -46,6 +46,7 @@ nav {
 }
 #home {
   grid-column: 16 / 17;
+  font-weight: bold;
 }
 #portfolio {
   grid-column: 17 / 18;
@@ -83,6 +84,7 @@ main {
 .textArea p {
   font-size: 26px;
   grid-row: 2 / 3;
+  text-align: justify;
 }
 .img {
   text-align: center;

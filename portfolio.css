@@ -47,6 +47,7 @@ nav {
 }
 #portfolio {
   grid-column: 17 / 18;
+  font-weight: bold;
 }
 #resume {
   grid-column: 18 / 19;

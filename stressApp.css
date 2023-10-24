@@ -34,7 +34,6 @@ nav {
     font-size: 23px;
     font-weight: bold;
     color: #E07A5F;
-
 }
 .navLink:visited {
     color: #E07A5F;
@@ -66,7 +65,7 @@ h1 {
 }
 p {
     font-size: 22px;
-    margin: 2% 15% 5%; /* top right bottom left */
+    margin: 2% 15% 5%;
     text-align: justify;
 }
 .sec1 p {
@@ -82,11 +81,6 @@ h3 {
     font-size: 40px;
     margin-top: 2%;
 }
-h4 {
-    font-size: 22px;
-    text-align: left;
-    margin: 1% 15% 1%;
-}
 /* --------START HERE-------------- */
 a {
 	color: #81B29A;
@@ -96,8 +90,6 @@ a {
     margin: 2% 15% 5%;
     padding: 0px;
     height: 620px;
-    /* overflow: scroll; */
-    /* border:1px solid #81B29A; */
     display: grid;
     grid-template-columns: 35% 65%;
 }

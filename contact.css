@@ -37,7 +37,6 @@ nav {
   font-size: 23px;
   font-weight: bold;
   color: #E07A5F;
-
 }
 .navLink:visited {
   color: #E07A5F;
@@ -56,6 +55,7 @@ nav {
 }
 #contact {
   grid-column: 19 / 20;
+  font-weight: bold;
 }
 /* ------------------------------*/
 main {
