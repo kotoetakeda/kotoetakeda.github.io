@@ -1,11 +1,9 @@
 * {
     margin: 0;
     padding: 0;
-    height: 100%;
     font-family: Chivo;
 }
 body {
-    height: 100%;
     display: grid;
     grid-template-rows: 8vh auto;
     background-color: #F4F1DE;
@@ -59,9 +57,33 @@ nav {
 main {
     color: #353850;
     grid-row: 2 / 9;
+    text-align: center;
 }
 h1 {
-    margin-top: 2%;
-    padding-bottom: 5%;
+    margin-top: 5%;
+    padding-bottom: 1%;
     font-size: 70px;
+}
+p {
+    font-size: 22px;
+    margin: 2% 15% 5%; /* top right bottom left */
+    text-align: justify;
+}
+.sec1 p {
+    margin-top: 1%;
+    text-align: center;
+}
+hr {
+    background-color: #F2CC8F;
+    height: 1px;
+    border-width: 0px;
+  }
+h3 {
+    font-size: 40px;
+    margin-top: 2%;
+}
+h4 {
+    font-size: 25px;
+    text-align: left;
+    margin: 1% 15% 1%;
 }
