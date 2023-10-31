@@ -145,4 +145,61 @@ a {
     #description #analysis {
         display: block;
     }
-    /* --------SELECTION FORMATTING ABOVE-------------- */
+/* --------SELECTION FORMATTING ABOVE-------------- */
+.sec2 {
+    display: grid;
+    grid-template-columns: 70% 25%;
+    grid-template-rows: repeat(5, 140px);
+    column-gap: 5%;
+    margin: 2% 15% 5%;
+}
+    .sec2 h3 {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+    .s2p1 p {
+        font-size: 22px;
+        margin: 0;
+        text-align: justify;
+        line-height: 1.5;
+    }
+    .s2p2 p {
+        font-size: 22px;
+        margin: 0;
+        text-align: left;
+        line-height: 1.5;
+    }
+    .s2p1 h4 {
+        font-size: 30px;
+        margin: 2%;
+        text-align: left;
+    }
+    .s2p2 h4 {
+        font-size: 30px;
+        margin-bottom: 2%;
+        text-align: left;
+    }
+    .sec2 #prob {
+        grid-column: 1 / 2;
+        grid-row: 2 / 4;
+    }
+    .sec2 #obj {
+        grid-column: 1 / 2;
+        grid-row: 4 / 6;
+    }
+    .sec2 #scope {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+    .sec2 #role {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+    .sec2 #skill {
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+    }
+    .sec2 #tool {
+        grid-column: 2 / 3;
+        grid-row: 5 / 6;
+    }

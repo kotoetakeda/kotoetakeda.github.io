@@ -103,13 +103,14 @@ button {
   border-radius: 50px;
   padding: 5px 10px;
   border-width: 0px;
+  font-size: 15px;
 }
 hr {
   background-color: #F2CC8F;
   height: 1px;
   border-width: 0px;
 }
-#stressApp {
+#med {
   margin-top: 0px;
 }
 #marta figcaption {
