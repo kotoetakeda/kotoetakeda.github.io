@@ -14,7 +14,7 @@ function reset() {
   function selection(id) {
     document.getElementById(id+"_tag").style.listStyle = "circle";
     document.getElementById(id+"_tag").style.listStylePosition = "inside";
-    document.getElementById(id+"_tag").style.fontSize = "32px";
+    document.getElementById(id+"_tag").style.fontSize = "30px";
     document.getElementById(id+"_tag").style.fontWeight = "bold";
     document.getElementById(id).style.display = "block";
   }
