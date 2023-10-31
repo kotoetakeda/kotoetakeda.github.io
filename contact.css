@@ -103,7 +103,7 @@ h1 {
   padding-left: 50px;
   padding-right: 50px;
   color: white;
-  background-color: #81B29A;
+  background-color: #E07A5F;
   border-radius: 12px;
 }
 #contactLabel {
@@ -127,16 +127,16 @@ h1 {
   text-align: left;
   margin: 8px 0;
   height: 40px;
-  border: 1px solid #81B29A;
+  border: 1px solid #E07A5F;
   font-size: 22px;
   font-family: Chivo;
   padding: 10px 10px;
   border-radius: 12px;
-  border: 2px solid #81B29A;
+  border: 2px solid #E07A5F;
   border-style: none none solid none;
 }
 .logoLink {
-  color: #81B29A;
+  color: #E07A5F;
   text-decoration: none;
 }
 .logoPic {
@@ -157,7 +157,7 @@ h1 {
 }
 
 .modal-content {
-  background-color: #81B29A;
+  background-color: #E07A5F;
   padding: 20px;
   width: 20%;
   height: 20%;

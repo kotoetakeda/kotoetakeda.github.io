@@ -83,11 +83,11 @@ h3 {
     margin-top: 2%;
 }
 mark {
-    background-color: rgba(129, 178, 154, 0.4);
+    background-color: rgba(224, 122, 95, 0.4);
 }
 /* --------SELECTION FORMATTING BELOW-------------- */
 a {
-	color: #81B29A;
+	color: #E07A5F;
 	text-decoration: none;
 }
 #timeline {
@@ -106,7 +106,7 @@ a {
     list-style-position: inside;
 }
     #processes li {
-        color: #81B29A;
+        color: #E07A5F;
         text-align: left;
         line-height: 100px;
         font-size: 22px;
@@ -149,7 +149,7 @@ a {
 .sec2 {
     display: grid;
     grid-template-columns: 70% 25%;
-    grid-template-rows: repeat(5, 150px);
+    grid-template-rows: repeat(5, 140px);
     column-gap: 5%;
     margin: 2% 15% 5%;
 }
