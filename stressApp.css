@@ -85,52 +85,70 @@ h3 {
 mark {
     background-color: rgba(224, 122, 95, 0.4);
 }
+
 /* --------SELECTION FORMATTING BELOW-------------- */
 a {
-	color: #E07A5F;
-	text-decoration: none;
+    color: #E07A5F;
+    text-decoration: none;
+    /* -webkit-transition: 0.5s;
+	/* -moz-transition: 0.5s; */
+	/* -o-transition: 0.5s;
+	-ms-transition: 0.5s;
+	transition: 0.5s; */
 }
 #timeline {
     margin: 2% 15% 5%;
     padding: 0px;
     height: 620px;
     display: grid;
-    grid-template-columns: 35% 65%;
+    float: center;
+    /* position: relative; */
+    /* grid-template-columns: 35% 65%; */
+    grid-template-rows: 15% 85%;
+    /* text-align: center; */
 }
 #processes {
-    grid-column: 1 / 2;
+    /* grid-column: 1 / 2; */
+    grid-row: 1 / 2;
     width: 100%;
-    overflow: hidden;
-    float: left;
-    list-style: disc;
-    list-style-position: inside;
+    display: flex;
+    list-style: none;
+    overflow: visible;
+    float: center;
+    text-align: center;
+    /* list-style: disc; */
+    /* list-style-position: inside; */
 }
     #processes li {
         color: #E07A5F;
         text-align: left;
-        line-height: 100px;
-        font-size: 22px;
-        padding-left: 5px;
+        line-height: 90px;
+        font-size: 20px;
+        padding: 0% 1% 0% 1%;
+        /* display: inline-flex; */
+        white-space: nowrap;
+        /* padding-left: 5px; */
     }
-    #processes a:hover, .tag:hover {
+    #processes a:hover {
         font-weight: bold;
-        list-style:circle;
-        list-style-position: inside;
+        /* list-style:circle; */
+        /* list-style-position: inside; */
     }
     #processes #analysis_tag {
-        font-size: 30px;
+        font-size: 32px;
         font-weight: bold;
-        list-style: circle;
-        list-style-position: inside;
+        /* list-style: circle; */
+        /* list-style-position: inside; */
     }
 
 #description {
-    grid-column: 2 / 3;
+    /* grid-column: 2 / 3; */
+    grid-row: 2 / 3;
     width: 100%;
     overflow: scroll;
     float: left;
     padding: 0;
-}	
+}   
     #description li {
         height: auto;
         list-style: none;
@@ -146,6 +164,19 @@ a {
         display: block;
     }
 /* --------SELECTION FORMATTING ABOVE-------------- */
+#hifi button, #hifi a {
+    height: 50px;
+    font-size: 22px;
+    padding: 5px 25px;
+    margin-bottom: 10px;
+    color: white;
+    background-color: #E07A5F;
+    border-radius: 12px;
+}
+#hifi img {
+    height: 660px;
+    width: 965px;
+}
 .sec2 {
     display: grid;
     grid-template-columns: 70% 25%;
