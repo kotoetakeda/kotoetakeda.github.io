@@ -86,6 +86,13 @@ h3 {
 mark {
     background-color: rgba(224, 122, 95, 0.4);
 }
+.fancy-border {
+    width: 100vw;
+    height: 2px;
+    text-align:center;
+    border-top: 5px solid;
+    border-image:   linear-gradient(to right, grey 25%, yellow 25%, yellow 50%,red 50%, red 75%, teal 75%) 10;
+  }
 /* --------SELECTION FORMATTING BELOW-------------- */
 a {
 	color: #E07A5F;
