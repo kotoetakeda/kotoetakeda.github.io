@@ -1,3 +1,5 @@
+/* to embed into other CSS File: 
+    @import url("general.css"); */
 * {
     margin: 0;
     padding: 0;
