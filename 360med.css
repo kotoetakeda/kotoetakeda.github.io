@@ -1,128 +1,14 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: Chivo;
-}
-body {
-    display: grid;
-    grid-template-rows: 8vh auto;
-    background-color: #FFFCF2;
-}
-.nav {
-    /* padding-top: 1.5%; */
-    height: 8vh;
-    background-color: rgba(255, 252, 242, 1);
-    display: grid;
-    grid-template-rows: auto 4px;
-    position: fixed;
-    text-align: left;
-}
-    .nav nav {
-        grid-row: 1 / 2;
-        display: grid;
-        margin: auto;
-        grid-template-columns: repeat(20, 1fr);
-        grid-gap: 30px;
-        font-size: 25px;
-    }
-    .nav .fancy-border {
-        grid-row: 2 / 3;
-        width: 100vw;
-        height: 4px;
-        text-align:center;
-        border-top: 5px solid;
-        border-image:   linear-gradient(to right, #E9EDC9 25%, #CCD5AE 25%, #CCD5AE 50%, #FAEDCD 50%, #FAEDCD 75%, #D4A373 75%) 10;
-    }
-    .logo {
-        grid-column: 1 / 7;
-        font-size: 1.8vw;
-        text-decoration-line: none;
-        color:  #353850;
-        font-weight: 400;
-        margin: auto;
-        display: flex
-    }
-    #wave {
-        grid-column: 5 / 6;
-        font-size: 21px;
-        display: none;
-        margin-left: -70%;
-        margin-bottom: -10%;
-    }
-    .logo:hover + #wave {
-        display: block;
-    } 
-    .navLink:link {
-        margin: auto;
-        font-size: 1.8vw;
-        color: #353850;
-        text-decoration-line: none;
-        font-weight: 400;
-        opacity: 0.5;
-    }
-    .navLink:visited, .navLink:active, .navLink:hover {
-        color: #353850;
-    }
-    .navLink:hover {
-        /* font-size: 27px; */
-        /* font-weight: bold; */
-        opacity: 1;
-    }
-    #home {
-        grid-column: 16 / 17;
-    }
-    #portfolio {
-        grid-column: 17 / 18;
-    }
-    #resume {
-        grid-column: 18 / 19;
-    }
-    #contact {
-        grid-column: 19 / 20;
-    }
-/* Navigation Bar Ends */
-main {
-    color: #353850;
-    grid-row: 2 / 9;
+@import url("general.css");
+.sec1 p {
+    margin-top: 1%;
     text-align: center;
 }
-    h1 {
-        margin-top: 5%;
-        padding-bottom: 1%;
-        font-size: 5vw;
-    }
-    p {
-        font-size: 1.5vw;
-        margin: 2% 15% 5%;
-        text-align: left;
-        line-height: 1.5;
-    }
-    .sec1 p {
-        margin-top: 1%;
+    .sec1 h1 {
         text-align: center;
-    }
-    hr {
-        background-color: #D4A373;
-        height: 1px;
-        border-width: 0px;
-        margin-bottom: 2%;
-    }
-    h3 {
-        font-size: 3vw;
-        margin-top: 2%;
-        margin-bottom: 5%;
-        text-align: center;
-    }
-    h4 {
-        font-size: 2.2vw;
-        margin-bottom: 2%; 
-    }
-    mark {
-        background-color: rgba(212,163,115, 0.5);
-        height: 3px;
     }
 .sec2 {
-    background-color: #FAEDCD;
+    background-color: #D9E8F5;
+    /* color : #FFFFFF; */
     display: grid;
     grid-template-columns: 70% 25%;
     grid-template-rows: repeat(5, 140px);
@@ -170,7 +56,8 @@ main {
 .sec4 {
     padding: 2% 15% 5%;
     text-align: left;
-    background-color: #FAEDCD;
+    background-color: #D9E8F5;
+    /* color: #FFFFFF; */
     display: grid;
     grid-template-columns: 3% 30% 63%;
     grid-template-rows: repeat(5, 140px);
