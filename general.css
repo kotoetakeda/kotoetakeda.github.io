@@ -126,3 +126,8 @@ main {
     mark {
         background-color: rgba(242, 97, 1, 0.5);
     }
+    .infoIcon {
+        color: grey;
+        font-size: 1.5vw;
+        text-decoration: none;
+    }
