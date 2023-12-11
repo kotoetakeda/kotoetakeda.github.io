@@ -95,9 +95,9 @@ header {
       }
   .fancy-border {
       width: 100vw;
-      height: 4px;
+      height: 0.2rem;
       text-align:center;
-      border-top: 5px solid;
+      border-top: 0.3rem solid;
       border-image: linear-gradient(to right, #D9E8F5 25%, #F26101 25%, #F26101 50%, #91BED4 50%, #91BED4 75%, #304269 75%) 10;
   }
 
@@ -188,5 +188,8 @@ main {
 @media (max-width: 400px) {
   html {
       font-size: 3px;
+  }
+  p {
+  font-size: 3rem;
   }
 }
