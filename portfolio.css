@@ -2,6 +2,12 @@
 #portfolio {
   opacity: 1;
 }
+#gallery {
+  display: flex;
+  /* grid-template-columns: repeat(3, 1fr); */
+  column-gap: 3%;
+  text-align: center;
+}
 .portfolio {
   margin-bottom: 5%;
   margin-top: 5%;
@@ -9,15 +15,15 @@
 }
 .portfolio img {
   height: 500px;
-  width: 700px;
+  width: 400px;
   margin-bottom:3%;
   border-radius: 50px;
 }
 .portfolio img:hover {
   height: 510px;
-  width: 710px;
+  width: 410px;
 }
-.portfolio a {
+/* .portfolio a {
   text-decoration: none;
   color: #304269;
 }
@@ -25,8 +31,8 @@
   text-align: center;
   margin-left: 21%;
   margin-right: 21%;
-}
-.portfolio figcaption p {
+} */
+/* .portfolio figcaption p {
   font-size: 25px;
 }
 .portfolio figcaption h2 {
@@ -39,13 +45,18 @@ button {
   padding: 5px 10px;
   border-width: 0px;
   font-size: 15px;
-}
-#med {
+} */
+/* #med {
+  grid-column: 1 / 2;
   margin-top: 0px;
+}
+#stressApp {
+  grid-column: 2 / 3;
 }
 #marta figcaption {
   margin-bottom: 0px;
 }
 #marta {
+  grid-column: 3 / 4;
   margin-bottom: 5%;
-}
+} */
