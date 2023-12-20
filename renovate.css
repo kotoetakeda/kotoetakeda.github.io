@@ -1,157 +1,42 @@
-/* general font size */
-html {
-    font-size: 62.5%;
-}
-h1 {
-    font-size: 6rem;
-}
-h2 {
-    font-size: 4rem;
-}
-h3 {
-    font-size: 3rem;
-}
-h4 {
-    font-size: 2.5rem;
-}
-p {
-    font-size: 2.2rem;
-}
+@import url(general.css);
 
-body {
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-rows: 5vh auto;
+#proj_link {
+    opacity: 1;
+    font-weight: 600;
 }
-/* navigation */
-header {
-    grid-row: 1 / 2;
-    display: grid;
-    grid-template-rows: auto 4px;
-    position: fixed;
-    height: 5vh;
-}
-    #header_con {
-        display: flex;
-    }
-        #logo_con {
-            width: 50vw;
-            display: flex;
-            justify-content: left;
-            margin: auto;
-        }
-        #nav_con {
-            display: inline-flex;
-            width: 50vw;
-            justify-content: right;
-            margin: auto;
-        }
-        #header_con p {
-            margin: auto;
-            padding: 0px 30px;
-        }
-            #menu {
-                display: none;
-            }
-        .navLink, #logo_link {
-            color: #000;
-            text-decoration: none;
-        }
-    .fancy-border {
-        width: 100vw;
-        height: 4px;
-        text-align:center;
-        border-top: 5px solid;
-        border-image: linear-gradient(to right, #D9E8F5 25%, #F26101 25%, #F26101 50%, #91BED4 50%, #91BED4 75%, #304269 75%) 10;
-    }
-
-/* main */
 main {
-    grid-row: 2 / 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10rem;
+    text-align: center;
 }
-    .textArea {
-        width: 55vw;
+    .top figure {
+        height: 94vh;
+        text-align: center;
+    }
+    .top img {
+        height: 80rem;
+        width: 150rem;
+        background-image: url('/Users/kotoetakeda/Desktop/Screenshot 2023-12-18 at 6.10.19 PM.png');
+        background-repeat: none;
+        background-size: cover;
+    }
+    .top img:hover {
+        height: 80rem;
+        width: 150rem;
+        background-image: url('https://media2.giphy.com/media/RtdRhc7TxBxB0YAsK6/giphy.gif');
+        background-repeat: none;
+        background-size: cover;
+    }
+    .top figcaption {
+        display: flex;
         justify-content: center;
         align-items: center;
-        padding-right: 5vw;
+        gap: 10rem;
     }
-        .textArea p {
-            font-size: 3rem;
+        /* .top #name {
+            text-align: left;
         }
-    img {
-        width: 40vw;
-        justify-content: center;
-        align-items: center;
-        margin: center;
-    }
-        #picture {
-            width: 40rem;
-            height: 40rem;
-            border-radius: 25px;
+        .top #skill {
+            text-align: center;
         }
-
-
-/* breakpoints */
-
-/* 2xl */
-@media (max-width: 1536px) {
-    html {
-        font-size: 10px;
-    }
-}
-
-/* xl */
-@media (max-width: 1280px) {
-    html {
-        font-size: 8px;
-    }
-}
-
-/* lg */
-@media (max-width: 1024px) {
-    html {
-        font-size: 7px;
-    }
-}
-
-/* md */
-@media (max-width: 768px) {
-    html {
-        font-size: 6px;
-    }
-}
-
-/* sm */
-@media (max-width: 640px) {
-    #about, #proj, #resume {
-        display: none;
-    }
-    #menu {
-        display: block;
-    } 
-    html {
-        font-size: 5px;
-    }
-}
-
-/* xs */
-@media (max-width: 548px) {
-    html {
-        font-size: 4px;
-    }
-}
-@media (max-width: 480px) {
-    html {
-        font-size: 3.5px;
-    }
-}
-@media (max-width: 400px) {
-    html {
-        font-size: 3px;
-    }
-}
+        .top #time {
+            text-align: right;
+        } */

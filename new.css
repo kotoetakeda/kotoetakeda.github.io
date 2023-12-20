@@ -1,0 +1,29 @@
+@import url('general.css');
+
+#about_link {
+    opacity: 1;
+}
+main {
+    padding-top: 10rem;
+    text-align: center;
+    margin: auto;
+}
+.textArea {
+    margin: auto;
+    text-align: center;
+    padding-top: 5rem;
+    color: #DBD9BC;
+}
+    .textArea h1 {
+        color: #C9AD4C;
+    }
+    .textArea p {
+        font-size: 3rem;
+        color: #DBD9BC;
+    }
+#picture {
+    width: 40rem;
+    height: 40rem;
+    border-radius: 500px;
+}
+  
