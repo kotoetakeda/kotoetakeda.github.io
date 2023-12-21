@@ -1,7 +1,36 @@
-@import url("general.css");
-#resume {
-  opacity: 1;
+@import url('general.css');
+
+#resume_link {
+    font-weight: bold;
+    pointer-events: none;
+    border-width: 1px;
+    border-color: #C7C0B6; 
+    border-style: none none solid none;
 }
+header {
+  background-color: #070915;
+}
+  #logo_con, .navLink p, .hoverEffect, .hoverEffect:after {
+    color: #C7C0B6;
+  }
+  .navLink {
+    border-color: #C7C0B6;
+  }
+  .hoverEffect:after {
+    background-color: #C7C0B6;
+  }
 main {
-  text-align: center;
+    text-align: center;
+    margin: auto;
 }
+  #sec1 {
+    width: 100vw;
+    background-color: #070915;
+    background: #070915;
+    margin: auto;
+    padding: 5rem 0rem 5rem 0rem;
+  }
+  #res_form {
+    width: 80vw;
+    height: 90vw;
+  }

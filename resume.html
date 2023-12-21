@@ -11,21 +11,56 @@
     <link rel="stylesheet" href="resume.css">
 </head>
 <body>
-    <div class="nav">
-        <nav id="navigation">
-            <a href="index.html" id="logo" class="hoverEffect">Kotoe Takeda</a>
-            <a href="index.html" id="home" class="navLink">&nbsp;About</a>
-            <a href="portfolio.html" id="portfolio" class="navLink">Work</a>
-            <a href="resume.html" id="resume" class="navLink">Resume</a>
-            <a href="contact.html" id="contact" class="navLink">Contact</a>
-        </nav>
-        <div class="fancy-border"></div>
-    </div>
-    <main>
-        <h1>My Resume</h1>
-        <div class="resume">
-            <iframe id ="form" src="Kotoe Takeda Resume.pdf" width="1130" height="1400" title="Kotoe Takeda Resume"></iframe>
+    <header>
+        <div id="header_con">
+            <div id="logo_con">
+                <a href="index.html" id="logo_link"><p class="hoverEffect" id="logo">Kotoe Takeda</p></a>
+            </div>
+            <div id="nav_con">
+                <a href="index.html" id="about_link" class="navLink"><p id="about">About</p></a>
+                <a href="portfolio.html" id="proj_link" class="navLink"><p id="proj">Project</p></a>
+                <a href="resume.html" id="resume_link" class="navLink"><p id="resume">Resume</p></a>
+                <a href="resume.html" id="menu_link" class="navLink"><p id="menu">Menu</p></a>
+            </div>
         </div>
+    </header>
+    <main> 
+        <section id="sec1">
+            <div class="resume">
+                <iframe id ="res_form" src="Kotoe Takeda Resume.pdf" title="Kotoe Takeda Resume"></iframe>
+            </div>
+        </section>
+        <section id="sec_contact">
+            <h1>Let's Connect</h1>
+            <form id="contactForm">
+                <div class="left" id="inputFields">
+                    <input type="hidden" name="contact_number">
+                    <input class="field" id="name" type="text" required placeholder="Full Name *"><br>
+                    <input class="field" id="email" type="email" required placeholder="Email *"><br>
+                    <input class="field" id="message" type="text" placeholder="Message"><br>
+                    <br>
+                    <input id="submit" type="submit" value="Send">
+                </div>
+                <div class="right">
+                    <h4 id="contactLabel">Contact:</h4>
+                    <p id="contactText">ktakeda3@gatech.edu</p>
+                    <br><br>
+                    <h4 id="addressLabel">Based in:</h4>
+                    <p id="addressText">Atlanta, Georgia</p>
+                    <a title="email: ktakeda3@gatech.edu" href="mailto: ktakeda3@gatech.edu" target="_blank" class="logoLink"><img class="logoPic" id="mailPic" src="email.png" alt="Gmail logo"></a>
+                    <a title="username: kotoetakeda" href="https://www.linkedin.com/in/kotoetakeda/" target="_blank" class="logoLink"><img class="logoPic" src="linkedin.png" alt="LinkedIn logo"></a>
+                    <a title="username: kotoetakeda" href="https://github.com/kotoetakeda" target="_blank" class="logoLink"><img class="logoPic" src="github logo.png" alt="GitHub logo"></a>
+                </div>
+            </form>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div id="text">
+                        <p>Thanks for the message!<br>I'll get back to you soon :&#41;</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>
