@@ -9,6 +9,16 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="index.css">
+    <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("JVvkuGQUcVqr53bpI");
+        })();
+    </script>
+    <script src="contact.js"></script>
 </head>
 <body>
     <header>
@@ -33,9 +43,14 @@
                 <h1>KOTOE TAKEDA</h1>
                 <br>
                 <p>UI/UX Developer · Software Engineer</p>
-                <div class="scroll">
+                <div id="scrolling">
                     <p>&darr;</p>
                 </div>
+                <script>
+                    document.addEventListener('scroll', (event) => {
+                        document.getElementById('scrolling').style.display = 'none';
+                    });
+                </script>
             </div>
         </section>
         <section id="sec2">

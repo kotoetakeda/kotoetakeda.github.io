@@ -34,7 +34,7 @@ main {
     height: 40rem;
     border-radius: 500px;
 }
-.scroll {
+#scrolling {
     color: #070915;
     font-size: 3rem;
     animation: arrow 3s infinite;

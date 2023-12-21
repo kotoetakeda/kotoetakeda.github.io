@@ -30,6 +30,7 @@ body {
   background-repeat: none;
   background-size: cover; */
   background-color: #C7C0B6;
+  overflow-x: hidden;
 }
 /* navigation */
 header {
