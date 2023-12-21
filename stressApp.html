@@ -4,19 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kotoe Takeda's Website</title>
-    <link rel="icon" type="image/x-icon" href="profilePicture.JPG">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="stressApp.css">
-    <script src="stressApp.js"></script>
+    <script src="stressApp.js" type="text/javascript"></script>
 </head>
 <body>
-    <nav id="navigation">
-        <a href="index.html" class="logo">Kotoe Takeda</a>
-        <a href="index.html" id="home" class="navLink">&nbsp;Home</a>
-        <a href="portfolio.html" id="portfolio" class="navLink">Portfolio</a>
-        <a href="resume.html" id="resume" class="navLink">Resume</a>
-        <a href="contact.html" id="contact" class="navLink">Contact</a>
-    </nav>
-    <main>
+    <header>
+        <div id="header_con">
+            <div id="logo_con">
+                <a href="index.html" id="logo_link"><p class="hoverEffect" id="logo">Kotoe Takeda</p></a>
+            </div>
+            <div id="nav_con">
+                <a href="index.html" id="about_link" class="navLink"><p id="about">About</p></a>
+                <a href="portfolio.html" id="proj_link" class="navLink"><p id="proj">Projects</p></a>
+                <a href="resume.html" id="resume_link" class="navLink"><p id="resume">Resume</p></a>
+                <a href="resume.html" id="menu_link" class="navLink"><p id="menu">Menu</p></a>
+            </div>
+        </div>
+    </header>
+    <main> 
         <section class="sec1">
             <h1>Stress App</h1>
             <p>An app that works alongside users in determining stress causes and discovering effective ways to manage them.</p>
