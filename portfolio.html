@@ -9,67 +9,111 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="portfolio.css">
+    <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("JVvkuGQUcVqr53bpI");
+        })();
+    </script>
+    <script src="contact.js"></script>
 </head>
 <body>
-    <div class="nav">
-        <nav id="navigation">
-            <a href="index.html" id="logo" class="hoverEffect">Kotoe Takeda</a>
-            <a href="index.html" id="home" class="navLink">&nbsp;About</a>
-            <a href="portfolio.html" id="portfolio" class="navLink">Work</a>
-            <a href="resume.html" id="resume" class="navLink">Resume</a>
-            <a href="contact.html" id="contact" class="navLink">Contact</a>
-        </nav>
-        <div class="fancy-border"></div>
-    </div>
+    <header>
+        <div id="header_con">
+            <div id="logo_con">
+                <a href="index.html" id="logo_link"><p class="hoverEffect" id="logo">Kotoe Takeda</p></a>
+            </div>
+            <div id="nav_con">
+                <a href="index.html" id="about_link" class="navLink"><p id="about">About</p></a>
+                <a href="portfolio.html" id="proj_link" class="navLink"><p id="proj">Project</p></a>
+                <a href="resume.html" id="resume_link" class="navLink"><p id="resume">Resume</p></a>
+                <a href="resume.html" id="menu_link" class="navLink"><p id="menu">Menu</p></a>
+            </div>
+        </div>
+    </header>
     <main>
         <h1>Case Study</h1>
-        <div id="gallery">
-            <figure class="portfolio" id="med">
-                <a href="360med.html" id="med_link"><img src="medCover.png" alt="Image of Portfolio 2: Medical Innovator">
-                   <!--<figcaption>
-                        <h2>Medical Innovator<i> (ongoing)</i></h2>
-                        <br>
-                        <p>An information visualization website that displays medical datasets in a clear manner.<p>
-                        <br>
-                        <button>UX Research</button>
-                        <button>UI Design</button>
-                        <button>Prototyping</button>
-                        <button>Wireframing</button>
-                    </figcaption>
-                </a> -->
-            </figure>
-            <hr>
-            <figure class="portfolio" id="stressApp">
-                <a href="stressApp.html" 
-                    id="stress_link"><img id="stress_img" src="stressAppCover.png" alt="Image of Portfolio 1: Stress App">
-                    <!-- <figcaption>
-                        <h2>Stress App</h2>
-                        <br>
-                        <p>An app that works alongside users in determining stress causes and discovering effective ways to manage them.<p>
-                        <br>
-                        <button>UX Research</button>
-                        <button>UI Design</button>
-                        <button>Prototyping</button>
-                    </figcaption>
-                </a> -->
-            </figure>
-            <hr>
-            <figure class="portfolio" id="marta">
-                <a href="marta.html" id="marta_link"><img src="martaCover.png" alt="Image of Portfolio 3: The MARTA System">
-                    <!-- <figcaption>
-                        <h2>The MARTA System</h2>
-                        <br>
-                        <p>Researched into Atlanta's train system -- Metropolitan Atlanta Rapid Transit Authority (MARTA) -- and developed a new signage system that better suits user needs.</p>
-                        <br>
-                        <button>UX Research</button>
-                        <button>Double Diamond Design Process</button>
-                        <button>UI Design</button>
-                        <button>Prototyping</button>
-                        <button>User Testing</button>
-                    </figcaption>
-                </a> -->
-            </figure>
-        </div>
+            <div id="gallery">
+                <figure class="portfolio" id="med">
+                    <a href="360med.html" id="med_link"><img src="medCover.png" alt="Image of Portfolio 2: Medical Innovator">
+                        <figcaption>
+                            <h2>Medical Innovator<i> (ongoing)</i></h2>
+                            <br>
+                            <p>An information visualization website that displays medical datasets in a clear manner.<p>
+                            <br>
+                            <button>UX Research</button>
+                            <button>UI Design</button>
+                            <button>Prototyping</button>
+                            <button>Wireframing</button>
+                        </figcaption>
+                    </a>
+                </figure>
+                <hr>
+                <figure class="portfolio" id="stressApp">
+                    <a href="stressApp.html" 
+                        id="stress_link"><img id="stress_img" src="stressAppCover.png" alt="Image of Portfolio 1: Stress App">
+                        <figcaption>
+                            <h2>Stress App</h2>
+                            <br>
+                            <p>An app that works alongside users in determining stress causes and discovering effective ways to manage them.<p>
+                            <br>
+                            <button>UX Research</button>
+                            <button>UI Design</button>
+                            <button>Prototyping</button>
+                        </figcaption>
+                    </a>
+                </figure>
+                <hr>
+                <figure class="portfolio" id="marta">
+                    <a href="marta.html" id="marta_link"><img src="martaCover.png" alt="Image of Portfolio 3: The MARTA System">
+                        <figcaption>
+                            <h2>The MARTA System</h2>
+                            <br>
+                            <p>Researched into Atlanta's train system -- Metropolitan Atlanta Rapid Transit Authority (MARTA) -- and developed a new signage system that better suits user needs.</p>
+                            <br>
+                            <button>UX Research</button>
+                            <button>Double Diamond Design Process</button>
+                            <button>UI Design</button>
+                            <button>Prototyping</button>
+                            <button>User Testing</button>
+                        </figcaption>
+                    </a>
+                </figure>
+            </div>
+        <section id="sec_contact">
+            <h1>Let's Connect</h1>
+            <form id="contactForm">
+                <div class="left" id="inputFields">
+                    <input type="hidden" name="contact_number">
+                    <input class="field" id="name" type="text" required placeholder="Full Name *"><br>
+                    <input class="field" id="email" type="email" required placeholder="Email *"><br>
+                    <input class="field" id="message" type="text" placeholder="Message"><br>
+                    <br>
+                    <input id="submit" type="submit" value="Send">
+                </div>
+                <div class="right">
+                    <h4 id="contactLabel">Contact:</h4>
+                    <p id="contactText">ktakeda3@gatech.edu</p>
+                    <br><br>
+                    <h4 id="addressLabel">Based in:</h4>
+                    <p id="addressText">Atlanta, Georgia</p>
+                    <a title="email: ktakeda3@gatech.edu" href="mailto: ktakeda3@gatech.edu" target="_blank" class="logoLink"><img class="logoPic" id="mailPic" src="email.png" alt="Gmail logo"></a>
+                    <a title="username: kotoetakeda" href="https://www.linkedin.com/in/kotoetakeda/" target="_blank" class="logoLink"><img class="logoPic" src="linkedin.png" alt="LinkedIn logo"></a>
+                    <a title="username: kotoetakeda" href="https://github.com/kotoetakeda" target="_blank" class="logoLink"><img class="logoPic" src="github logo.png" alt="GitHub logo"></a>
+                </div>
+            </form>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div id="text">
+                        <p>Thanks for the message!<br>I'll get back to you soon :&#41;</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>

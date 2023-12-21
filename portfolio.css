@@ -1,51 +1,60 @@
 @import url("general.css");
-#portfolio {
-  opacity: 1;
+
+#proj_link {
+  font-weight: bold;
+  pointer-events: none;
+  border-width: 1px;
+  border-color: #070915; 
+  border-style: none none solid none;
 }
-#gallery {
+main {
+  text-align: center;
+  margin: auto;
+}
+
+/* #gallery {
   display: flex;
-  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: repeat(3, 1fr);
   column-gap: 3%;
   text-align: center;
-}
+} */
 .portfolio {
   margin-bottom: 5%;
   margin-top: 5%;
   text-align: center;
 }
 .portfolio img {
-  height: 500px;
-  width: 400px;
+  height: 50rem;
+  width: 70rem;
   margin-bottom:3%;
-  border-radius: 50px;
+  border-radius: 5rem;
 }
 .portfolio img:hover {
-  height: 510px;
-  width: 410px;
+  height: 50.5rem;
+  width: 70.5rem;
 }
-/* .portfolio a {
+.portfolio a {
   text-decoration: none;
-  color: #304269;
 }
 .portfolio figcaption {
   text-align: center;
   margin-left: 21%;
   margin-right: 21%;
-} */
-/* .portfolio figcaption p {
-  font-size: 25px;
+}
+.portfolio figcaption p {
+  font-size: 2.5rem;
 }
 .portfolio figcaption h2 {
-  font-size: 50px;
+  font-size: 5rem;
 }
 button {
-  background-color: #D9E8F5;
-  color: #304269;
-  border-radius: 50px;
-  padding: 5px 10px;
+  background-color: white;
+  color: #070915;
+  border-radius: 5rem;
+  padding: 0.5rem 1rem;
   border-width: 0px;
-  font-size: 15px;
-} */
+  font-size: 1.5rem;
+}
 /* #med {
   grid-column: 1 / 2;
   margin-top: 0px;
@@ -59,4 +68,50 @@ button {
 #marta {
   grid-column: 3 / 4;
   margin-bottom: 5%;
+}
+
+.portfolio {
+  margin-bottom: 5%;
+}
+.portfolio a {
+  text-decoration: none;
+  color: #C7C0B6;
+}
+.portfolio figcaption {
+  text-align: center;
+}
+button {
+  background-color: white;
+  color: #070915;
+  border-radius: 50px;
+  padding: 5px 10px;
+  border-width: 0px;
+  font-size: 15px;
+}
+#med {
+  margin-top: 0px;
+}
+#marta figcaption {
+  margin-bottom: 0px;
+}
+#marta {
+  margin-bottom: 5%;
+}
+*/
+#sec_contact {
+  background-color: #070915;
+  color: #C7C0B6;
+  width: 100vw;
+}
+  #sec_contact h1, form, 
+  #contactLabel, #contactText,
+  #addressLabel, #addressText {
+    color: #C7C0B6;
+  }
+  #submit {
+    color: #070915;
+    background-color: #C7C0B6;
+}
+/* .logoLink {
+    background-color: #C7C0B6;
 } */
