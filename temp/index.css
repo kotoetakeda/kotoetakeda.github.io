@@ -1,0 +1,86 @@
+@import url('global.css');
+
+/* font customizations */
+.t1 { /* title header 1 */
+    font-size: 20rem;
+    font-weight: 600;
+}
+.t2 { /* title header 2 */
+    font-size: 5rem;
+}
+.t3 { /* title header 3 */
+    font-size: 3rem;
+}
+.n { /* normal text */
+    font-size: 2.2rem;
+}
+/* others */
+body {
+    display: grid;
+    grid-template-rows: 8vh 95vh;
+}
+
+/* header */
+header {
+    grid-row: 1 / 2;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    height: 100%;
+    width: 100%;
+}
+    #logo-container {
+        display: flex;
+        justify-content: start;
+    }
+    #shortcut-container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+/* main */
+main {
+    grid-row: 2 / 3;
+}
+    /* section 1: introduction */
+    #sec1 {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+        #main-text {
+            z-index: 0;
+        }
+        img {
+            position: absolute;
+            top: 10%;
+            left: 63%;
+            z-index: -1;
+            height: 90vh;
+            width: auto;
+        }
+
+    /* section 2: short description about myself */
+    #sec2 {
+        height: 100vh;
+        width: 100%;
+        /* border-color: var(--side-color);
+        border-width: 1px;
+        border-style: solid none none none; */
+        display: grid;
+        grid-template-columns: 20% auto 20%;
+        /* display: flex; */
+    }
+        #abt-title {
+            grid-column: 1 / 2;
+            text-decoration: underline;
+            text-underline-offset: 8px;
+            font-weight: 600;
+            padding-bottom: 2rem;
+            transform:rotate(-90deg);
+            width: fit-content;
+        }
+        #abt-dec {
+            grid-column: 2 / 3;
+        }

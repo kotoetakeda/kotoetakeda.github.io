@@ -39,6 +39,7 @@ header {
 }
   #header_con {
       display: flex;
+      background-color: black;
   }
       #logo_con {
           width: 49vw;
@@ -46,7 +47,7 @@ header {
           justify-content: left;
           margin: auto;
           padding-left: 20px;
-          color: #070915;
+          color: white;
       }
         #logo_link {
           text-decoration: none;

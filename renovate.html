@@ -9,42 +9,32 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="renovate.css">
+    <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("JVvkuGQUcVqr53bpI");
+        })();
+    </script>
+    <script src="contact.js"></script>
 </head>
 <body>
     <header>
         <div id="header_con">
             <div id="logo_con">
-                <a href="index.html" id="logo_link" class="hoverEffect"><p id="logo">Kotoe Takeda</p></a>
+                <a href="index.html" id="logo_link"><p class="hoverEffect" id="logo">Kotoe Takeda</p></a>
             </div>
             <div id="nav_con">
                 <a href="index.html" id="about_link" class="navLink"><p id="about">About</p></a>
-                <a href="portfolio.html" id="proj_link" class="navLink"><p id="proj">Project</p></a>
-                <a href="resume.html" id="resume_link" class="navLink"><p id="resume">Resume</p></a>
+                <a href="portfolio.html" id="proj_link" class="navLink"><p id="proj">Projects</p></a>
+                <a href="resume.html" id="menu_link" class="navLink"><p id="menu">Sun</p></a>
                 <a href="resume.html" id="menu_link" class="navLink"><p id="menu">Menu</p></a>
             </div>
         </div>
-        <div class="fancy-border"></div>
     </header>
     <main>
-        <h3>Featured</h3>
-        <div class="top">
-            <figure class="top">
-                <img class="top">
-                <figcaption class="top">
-                    <p class="top" id="name"><b>360Med</b></p>
-                    <p class="top" id="skill">UX Research | UI Design | Frontend Development</p>
-                    <p class="top" id="time"><i>Aug 2023 - present</i></p>
-                </figcaption>
-            </figure>
-        </div>
-        <div class="latest">
-            <img id="360med" src="medCover.png" alt="360Med Image Cover">
-            <p><b>360 Med</b>&nbsp;&nbsp;UX Research | UI Design | Frontend Development (TypeScript, JavaScript, HTML/CSS)</p>
-        </div>
-        <div class="gallery">
-            <img id="360med" src="medCover.png" alt="360Med Image Cover">
-            <p><b>360 Med</b>&nbsp;&nbsp;UX Research | UI Design | Frontend Development (TypeScript, JavaScript, HTML/CSS)</p>
-        </div>
     </main>
 </body>
 </html>

@@ -1,0 +1,104 @@
+:root {
+    /* global variables */
+    --main-color: #fbf7ef;
+    --side-color: #911010;
+    --black: #000;
+    --white: #FFF;
+
+    /* general settings */
+    font-family: Didot, serif;
+    color: black;
+    font-size: 62.5%;
+    margin: 1%;
+    padding: 0;
+}
+body {
+    background-color: var(--main-color);
+}
+p {
+    padding: 0;
+    margin: 0;
+}
+.t1 { /* title header 1 */
+    font-size: 6rem;
+}
+.t2 { /* title header 2 */
+    font-size: 4rem;
+}
+.t3 { /* title header 3 */
+    font-size: 3rem;
+}
+.n { /* normal text */
+    font-size: 2.2rem;
+}
+a, a:visited, a:default {
+    color: var(--side-color);
+    text-decoration: none;
+}
+a:hover, a:active {
+    color: var(--side-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+/* breakpoints */
+
+/* 2xl */
+@media (max-width: 1536px) {
+    html {
+        font-size: 10px;
+    }
+  }
+  
+  /* xl */
+  @media (max-width: 1280px) {
+    html {
+        font-size: 8px;
+    }
+  }
+  
+  /* lg */
+  @media (max-width: 1024px) {
+    html {
+        font-size: 7px;
+    }
+  }
+  
+  /* md */
+  @media (max-width: 768px) {
+    html {
+        font-size: 6px;
+    }
+  }
+  
+  /* sm */
+  @media (max-width: 640px) {
+    #about, #proj, #resume {
+        display: none;
+    }
+    #menu {
+        display: block;
+    } 
+    html {
+        font-size: 5px;
+    }
+  }
+  
+  /* xs */
+  @media (max-width: 548px) {
+    html {
+        font-size: 4px;
+    }
+  }
+  @media (max-width: 480px) {
+    html {
+        font-size: 3.5px;
+    }
+  }
+  @media (max-width: 400px) {
+    html {
+        font-size: 3px;
+    }
+    p {
+    font-size: 3rem;
+    }
+  }

@@ -1,42 +1,4 @@
-@import url(general.css);
-
-#proj_link {
-    opacity: 1;
-    font-weight: 600;
+* {
+    background-color: black;
+    color: white;
 }
-main {
-    text-align: center;
-}
-    .top figure {
-        height: 94vh;
-        text-align: center;
-    }
-    .top img {
-        height: 80rem;
-        width: 150rem;
-        background-image: url('/Users/kotoetakeda/Desktop/Screenshot 2023-12-18 at 6.10.19 PM.png');
-        background-repeat: none;
-        background-size: cover;
-    }
-    .top img:hover {
-        height: 80rem;
-        width: 150rem;
-        background-image: url('https://media2.giphy.com/media/RtdRhc7TxBxB0YAsK6/giphy.gif');
-        background-repeat: none;
-        background-size: cover;
-    }
-    .top figcaption {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10rem;
-    }
-        /* .top #name {
-            text-align: left;
-        }
-        .top #skill {
-            text-align: center;
-        }
-        .top #time {
-            text-align: right;
-        } */
