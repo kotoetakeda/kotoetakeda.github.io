@@ -1,3 +1,5 @@
+@import url('responsive.css');
+
 :root {
     /* global variables */
     --main-color: #fbf7ef;
@@ -8,12 +10,18 @@
     /* general settings */
     font-family: Didot, serif;
     color: black;
-    font-size: 62.5%;
+    /* font-size: 62.5%; */
     margin: 1%;
     padding: 0;
 }
+html {
+    font-size: 62.5%;
+}
 body {
     background-color: var(--main-color);
+    display: grid;
+    grid-template-rows: 15vh 85vh;
+    overflow-x: hidden;
 }
 p {
     padding: 0;
@@ -40,65 +48,45 @@ a:hover, a:active {
     font-weight: bold;
     text-decoration: none;
 }
-/* breakpoints */
+.round-btn {
+    background-color: var(--side-color);
+    border-radius: 12px; 
+    border-color: var(--side-color);
+    height: 2.5rem;
+    width: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: var(--main-color);
+}
+    .round-btn:hover {
+        font-weight: 800;
+    }
 
-/* 2xl */
-@media (max-width: 1536px) {
-    html {
-        font-size: 10px;
+/* header */
+header {
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+    #logo-container {
+        display: flex;
+        justify-content: start;
     }
-  }
-  
-  /* xl */
-  @media (max-width: 1280px) {
-    html {
-        font-size: 8px;
+        #logo {
+            height: 10rem;
+            border-radius: 20px;
+        }
+    #shortcut-container {
+        display: flex;
+        justify-content: space-evenly;
     }
-  }
-  
-  /* lg */
-  @media (max-width: 1024px) {
-    html {
-        font-size: 7px;
-    }
-  }
-  
-  /* md */
-  @media (max-width: 768px) {
-    html {
-        font-size: 6px;
-    }
-  }
-  
-  /* sm */
-  @media (max-width: 640px) {
-    #about, #proj, #resume {
-        display: none;
-    }
-    #menu {
-        display: block;
-    } 
-    html {
-        font-size: 5px;
-    }
-  }
-  
-  /* xs */
-  @media (max-width: 548px) {
-    html {
-        font-size: 4px;
-    }
-  }
-  @media (max-width: 480px) {
-    html {
-        font-size: 3.5px;
-    }
-  }
-  @media (max-width: 400px) {
-    html {
-        font-size: 3px;
-    }
-    p {
-    font-size: 3rem;
-    }
-  }
+
+main {
+    grid-row: 2 / 3;
+}
+

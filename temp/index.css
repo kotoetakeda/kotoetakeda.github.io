@@ -1,6 +1,6 @@
 @import url('global.css');
 
-/* font customizations */
+/* --- FONT CUSTOMIZATIONS --- */
 .t1 { /* title header 1 */
     font-size: 20rem;
     font-weight: 600;
@@ -10,41 +10,37 @@
 }
 .t3 { /* title header 3 */
     font-size: 3rem;
+    text-underline-offset: 8px;
+    font-weight: 600;
+    color: var(--side-color);
 }
 .n { /* normal text */
     font-size: 2.2rem;
 }
-/* others */
-body {
-    display: grid;
-    grid-template-rows: 8vh 95vh;
-}
 
-/* header */
-header {
-    grid-row: 1 / 2;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 70% 30%;
-    height: 100%;
-    width: 100%;
-}
-    #logo-container {
-        display: flex;
-        justify-content: start;
+/* --- MAIN --- */
+    #modal-container {
+        display: none;
+        background-color: rgba(251,247,239, 0.8);
+        width: 99vw;
+        height: 99vh;
+        position:fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
     }
-    #shortcut-container {
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-/* main */
-main {
-    grid-row: 2 / 3;
-}
+        #modal {
+            margin: 5vh 5vw;
+            width: 90vw;
+            height: 90vh;
+            background-color: var(--main-color);
+            border-color: #911010;
+            border-width:1px;
+            border-style: solid;
+        }
     /* section 1: introduction */
     #sec1 {
-        height: 100vh;
+        height: 99vh;
         width: 100%;
         display: flex;
         align-items: center;
@@ -52,35 +48,31 @@ main {
         #main-text {
             z-index: 0;
         }
-        img {
+        #profile {
             position: absolute;
             top: 10%;
-            left: 63%;
+            left: 62%;
             z-index: -1;
-            height: 90vh;
+            height: 80rem;
             width: auto;
         }
 
     /* section 2: short description about myself */
     #sec2 {
-        height: 100vh;
+        height: 50vh;
         width: 100%;
-        /* border-color: var(--side-color);
-        border-width: 1px;
-        border-style: solid none none none; */
-        display: grid;
-        grid-template-columns: 20% auto 20%;
-        /* display: flex; */
+        display: flex;
+        padding: 10% 0% 5% 0%;
     }
         #abt-title {
-            grid-column: 1 / 2;
-            text-decoration: underline;
-            text-underline-offset: 8px;
-            font-weight: 600;
-            padding-bottom: 2rem;
             transform:rotate(-90deg);
-            width: fit-content;
+            width: 50rem;
+            height: 10rem;
         }
-        #abt-dec {
-            grid-column: 2 / 3;
-        }
+
+    /* section 3: skills */
+    #sec3 {
+        margin: 5% 5%;
+        padding: 2% 2%;
+        height: 70vh;
+    }
