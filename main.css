@@ -1,0 +1,64 @@
+@import url('general.css');
+
+#about_link {
+    font-weight: bold;
+    pointer-events: none;
+    border-width: 1px;
+    border-color: #070915; 
+    border-style: none none solid none;
+}
+main {
+    text-align: center;
+    margin: auto;
+}
+#sec1 {
+    background-color: #C7C0B6;
+    height: 99vh;
+    padding-top: 10rem;
+}
+.textArea {
+    margin: auto;
+    text-align: center;
+    padding-top: 5rem;
+    color: #070915;
+}
+    .textArea h1 {
+        color: #070915;
+    }
+    .textArea p {
+        font-size: 3rem;
+        color: #070915;
+    }
+#picture {
+    width: 40rem;
+    height: 40rem;
+    border-radius: 500px;
+}
+#scrolling {
+    color: #070915;
+    font-size: 3rem;
+    animation: arrow 3s infinite;
+    position: fixed;
+    bottom: 1%;
+    left: 50%;
+}
+@keyframes arrow {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 0.7;
+    }
+}
+#sec2 {
+    background-color: #070915;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    #sec2 h1, #sec2 p {
+        color: #C7C0B6;
+    }
+    .abt_dec {
+        margin: 10% 10%;
+    }
+  

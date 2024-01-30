@@ -9,55 +9,41 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="index.css">
-    <script
-        type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init("JVvkuGQUcVqr53bpI");
-        })();
-    </script>
-    <script src="contact.js"></script>
+    <script type="text/javascript" src="index.js"></script>
 </head>
 <body>
     <header>
-        <div id="header_con">
-            <div id="logo_con">
-                <a href="index.html" id="logo_link"><p class="hoverEffect" id="logo">Kotoe Takeda</p></a>
-            </div>
-            <div id="nav_con">
-                <a href="index.html" id="about_link" class="navLink"><p id="about">About</p></a>
-                <a href="portfolio.html" id="proj_link" class="navLink"><p id="proj">Projects</p></a>
-                <a href="resume.html" id="resume_link" class="navLink"><p id="resume">Resume</p></a>
-                <a href="resume.html" id="menu_link" class="navLink"><p id="menu">Menu</p></a>
+        <div id="logo-container">
+            <a href="index.html"><img id="logo" src="images/logo.png" alt="Kotoe Takeda"></a>
+        </div>
+        <div id="shortcut-container">
+            <div>
+                <a href="" class="nav_link"><p class="n">About</p></a>
+                <a href="" class="nav_link"><p class="n">Projects</p></a>
+                <a href="" class="nav_link"><p class="n">Resume</p></a>
+                <button id="more" class="round-btn" onclick="modal(this)"><p>···</p></button>
             </div>
         </div>
     </header>
     <main>
+        <div id="modal-container">
+            <div id="modal">
+                <button id="close" class="round-btn" onclick="modal(this)">X</button>
+            </div>
+        </div>
         <section id="sec1">
-            <div class="img">
-                <img id="picture" src="profilePicture.JPG" alt="profile photo">
+            <div id="main-text">
+                <p class="t1">Kotoe Takeda</h1>
+                <p class="t2">&nbsp;Software Engineer</h2>
             </div>
-            <div class="textArea">
-                <h1>KOTOE TAKEDA</h1>
-                <br>
-                <p>UI/UX Developer · Software Engineer</p>
-                <div id="scrolling">
-                    <p>&darr;</p>
-                </div>
-                <script>
-                    document.addEventListener('scroll', (event) => {
-                        document.getElementById('scrolling').style.display = 'none';
-                    });
-                </script>
-            </div>
+            <img id="profile" src="https://thumbs.dreamstime.com/b/long-road-2232078.jpg" alt="profile picture">
         </section>
         <section id="sec2">
+            <p class="t3" id='abt-title'>About Me</p>
             <div class="abt_dec">
-                <h1>Hi I'm Kotoe!</h1>
+                <p class="n"><b>Hello there! I'm Kotoe!</b></p>
                 <br><br>
-                <p>I am a 3rd year undergraduate student at Georgia Institute of Technology majoring in Computer Science with concentrations in people and media.
+                <p class="n">I am a 3rd year undergraduate student at Georgia Institute of Technology majoring in Computer Science with concentrations in people and media.
                 <br><br>
                 With a background in software engineering and UI/UX, I find great satisfaction in bringing my ideas to life and placing them into the hands of diverse users. 
                     Seeing people effortlessly enjoy and engage with my creations is what drives me to continue innovating for more solutions that meet people's needs and challenges.
@@ -65,37 +51,11 @@
                 My goal is to design everyday items that seamlessly integrate into people's lives, as if they were there all along.</p>
             </div>
         </section>
-        <section id="sec_contact">
-            <h1>Let's Connect</h1>
-            <form id="contactForm">
-                <div class="left" id="inputFields">
-                    <input type="hidden" name="contact_number">
-                    <input class="field" id="name" type="text" required placeholder="Full Name *"><br>
-                    <input class="field" id="email" type="email" required placeholder="Email *"><br>
-                    <input class="field" id="message" type="text" placeholder="Message"><br>
-                    <br>
-                    <input id="submit" type="submit" value="Send">
-                </div>
-                <div class="right">
-                    <h4 id="contactLabel">Contact:</h4>
-                    <p id="contactText">ktakeda3@gatech.edu</p>
-                    <br><br>
-                    <h4 id="addressLabel">Based in:</h4>
-                    <p id="addressText">Atlanta, Georgia</p>
-                    <a title="email: ktakeda3@gatech.edu" href="mailto: ktakeda3@gatech.edu" target="_blank" class="logoLink"><img class="logoPic" id="mailPic" src="email.png" alt="Gmail logo"></a>
-                    <a title="username: kotoetakeda" href="https://www.linkedin.com/in/kotoetakeda/" target="_blank" class="logoLink"><img class="logoPic" src="linkedin.png" alt="LinkedIn logo"></a>
-                    <a title="username: kotoetakeda" href="https://github.com/kotoetakeda" target="_blank" class="logoLink"><img class="logoPic" src="github logo.png" alt="GitHub logo"></a>
-                </div>
-            </form>
-            <div id="myModal" class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <div id="text">
-                        <p>Thanks for the message!<br>I'll get back to you soon :&#41;</p>
-                    </div>
-                </div>
+        <section id="sec3">
+            <div id="skill-container">
+                <p class="t3" id='skill-title'>Skills</p>
             </div>
         </section>
     </main>
 </body>
-</html>
+</html> 
