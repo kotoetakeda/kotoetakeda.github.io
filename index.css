@@ -52,13 +52,35 @@
         #main-text {
             z-index: 0;
         }
-        #profile {
+        #profile1 {
+            position: absolute;
+            top: 52rem;
+            left: 75rem;
+            z-index: -1;
+            height: 30rem;
+            width: auto;
+            border-radius: 1000rem;
+            /* opacity: 0.8; */
+        }
+        #profile2 {
             position: absolute;
             top: 10rem;
-            left: 90rem;
+            left: 100rem;
             z-index: -1;
-            height: 80rem;
+            height: 25rem;
             width: auto;
+            border-radius: 1000rem;
+            /* opacity: 0.8; */
+        }
+        #profile3 {
+            position: absolute;
+            top: 25rem;
+            left: 45rem;
+            z-index: -1;
+            height: 15rem;
+            width: auto;
+            border-radius: 1000rem;
+            /* opacity: 0.8; */
         }
 
     /* section 2: short description about myself */
