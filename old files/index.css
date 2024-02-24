@@ -52,35 +52,26 @@
         #main-text {
             z-index: 0;
         }
-        #profile1 {
+        .profilePic {
             position: absolute;
-            top: 52rem;
-            left: 75rem;
+            width: auto;
+            border-radius: 4000rem;
+        }
+        #profile1 {
+            top: 60%;
+            left: 75%;
             z-index: -1;
             height: 30rem;
-            width: auto;
-            border-radius: 1000rem;
-            /* opacity: 0.8; */
         }
         #profile2 {
-            position: absolute;
-            top: 10rem;
-            left: 100rem;
-            z-index: -1;
+            top: 10%;
+            left: 55%;
             height: 25rem;
-            width: auto;
-            border-radius: 1000rem;
-            /* opacity: 0.8; */
         }
         #profile3 {
-            position: absolute;
-            top: 25rem;
-            left: 45rem;
-            z-index: -1;
+            top: 30%;
+            left: 30%;
             height: 15rem;
-            width: auto;
-            border-radius: 1000rem;
-            /* opacity: 0.8; */
         }
 
     /* section 2: short description about myself */
