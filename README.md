@@ -1,6 +1,6 @@
 # Kotoe Takeda's Website
-This is my personal portfolio website containing my work, my resume, and my life. Come check it out!
-kotoetakeda.github.io/
+This is my personal portfolio website containing my works, my resume, and my life. Come check it out!<br>
+https://www.kotoetakeda.github.io/
 
 ## Built with
 - JavaScript
@@ -8,4 +8,4 @@ kotoetakeda.github.io/
 - CSS3
 
 ## Contact
-Kotoe Takeda: ktakeda3@gatech.edu - https://www.linkedin.com/in/kotoetakeda/
+Kotoe Takeda: [Email](ktakeda3@gatech.edu), [Linkedin](https://www.linkedin.com/in/kotoetakeda/)
