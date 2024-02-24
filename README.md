@@ -8,4 +8,4 @@ https://www.kotoetakeda.github.io/
 - CSS3
 
 ## Contact
-Kotoe Takeda: [Email](ktakeda3@gatech.edu), [Linkedin](https://www.linkedin.com/in/kotoetakeda/)
+Kotoe Takeda: [ktakeda3@gatech.edu](mailto:ktakeda3@gatech.edu), [Linkedin](https://www.linkedin.com/in/kotoetakeda/)
