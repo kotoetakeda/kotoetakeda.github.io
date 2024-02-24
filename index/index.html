@@ -8,6 +8,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="index.css">
     <script type="text/javascript" src="index.js"></script>
 </head>
@@ -18,17 +19,17 @@
         </div>
         <div id="shortcut-container">
             <div>
-                <a href="" class="nav_link"><p class="n">About</p></a>
-                <a href="" class="nav_link"><p class="n">Projects</p></a>
-                <a href="" class="nav_link"><p class="n">Resume</p></a>
-                <button id="more" class="round-btn" onclick="modal(this)"><p>···</p></button>
+                <a href="" class="nav_link" aria-disabled="true"><p class="n" id="about">About</p></a>
+                <a href="project/project.html" class="nav_link"><p class="n" id="projects">Projects</p></a>
+                <a href="resume/resume.html" class="nav_link"><p class="n" id="resume">Resume</p></a>
+                <button id="more" class="round-btn fa fa-bars" onclick="modal(this)"><p></p></button>
             </div>
         </div>
     </header>
     <main>
         <div id="modal-container">
             <div id="modal">
-                <button id="close" class="round-btn" onclick="modal(this)">X</button>
+                <button id="close" class="round-btn fa fa-close" onclick="modal(this)"></button>
             </div>
         </div>
         <section id="sec1">

@@ -17,6 +17,12 @@
 .n { /* normal text */
     font-size: 2.2rem;
 }
+#about {
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    cursor: default;
+}
 
 /* --- MAIN --- */
     #modal-container {
