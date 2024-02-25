@@ -140,6 +140,14 @@ main {
     grid-row: 2 / 3;
     margin: 5% 1%;
 }
+.resume-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+hr {
+    margin: 5rem 0rem;
+}
 
 /* footer */
 footer {

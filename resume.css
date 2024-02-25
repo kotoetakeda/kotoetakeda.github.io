@@ -26,14 +26,6 @@
     cursor: default;
 }
 /* --- MAIN --- */
-.resume-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-hr {
-    margin: 5rem 0rem;
-}
 .work-title {
     display: flex;
     justify-content: space-between;
