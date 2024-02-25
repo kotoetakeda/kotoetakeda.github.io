@@ -54,17 +54,30 @@ a:hover, a:active {
     background-color: var(--side-color);
     border-radius: 50px; 
     border-color: var(--side-color);
+    color: var(--main-color);
     height: 4rem;
     width: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2.2rem;
+}
+.square-btn {
+    background-color: var(--side-color);
+    border-radius: 12px; 
+    border-color: var(--side-color);
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2rem;
     color: var(--main-color);
 }
-    /* .round-btn:hover {
-        font-weight: 800;
-    } */
+    button:hover {
+        background-color: var(--main-color);
+        border-color: var(--side-color);
+        color: var(--side-color);
+    }
 
 /* header */
 header {
@@ -125,7 +138,7 @@ header {
 /* main */
 main {
     grid-row: 2 / 3;
-    margin: 1%;
+    margin: 5% 1%;
 }
 
 /* footer */

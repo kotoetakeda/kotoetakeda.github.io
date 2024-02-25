@@ -10,7 +10,6 @@
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="resume.css">
-    <!-- TODO: link css file here -->
     <script type="text/javascript" src="global.js"></script>
 </head>
 <body>
@@ -33,8 +32,73 @@
                 <button id="close" class="round-btn fa fa-close" onclick="modal(this)"></button>
             </div>
         </div>
+        <div class="resume-header">
+            <p class="t2">Resume</p>
+        </div>
+        <div class="resume-header">
+            <button class="square-btn" onclick="openPDF('resume')">View PDF version</button>
+        </div>
+        <hr>
         <section id="sec1">
-            <!--TODO: Add content here-->
+            <p class="t3">Education</p>
+            <!-- Georgia Tech -->
+            <div class="work-title">
+                <p class="n"><b>GEORGIA INSTITUTE OF TECHNOLOGY</b></p>
+                <p class="n"><b>Atlanta, GA</b></p>
+            </div>
+            <div class="work-title">
+                <p class="n"><i>Bachelor of Science in Computer Science</i></p>
+                <p class="n"><i>August 2021 - May 2025</i></p>
+            </div>
+            <ul>
+                <li class="n">dean's list</li>
+                <li class="n">working towards <b>Business Analytics certificate</b></li>
+                <li class="n"><u>coursework</u>: Information Visualization, User Interface Design, Objects and Design, Computing Ethics, Data
+                    Structures and Algorithm, Object-Oriented Programming, Computer Graphics</li>
+            </ul>
+        </section>
+        <section id="sec2">
+            <p class="t3">Work Experience</p>
+            
+            <!-- Matmerize -->
+            <div class="work-title">
+                <p class="n"><b>MATMERIZE</b></p>
+                <p class="n"><b>Atlanta, GA</b></p>
+            </div>
+            <div class="work-title">
+                <p class="n"><i>Frontend Developer Intern</i></p>
+                <p class="n"><i>January 2024 - Present</i></p>
+            </div>
+            <ul>
+                <li class="n">Assist in migrating current framework used in the front-end (JS and Flask+HTML) to React based framework</li>
+                <li class="n">Update the codes for input and output pages of Predict/Screen tab to enhance the site performance</li>
+                <li class="n">Implement and write E2E tests for bug fixes and new features reported on Git</li>
+            </ul>
+            <br>
+
+            <!-- InstaHub -->
+            <div class="work-title">
+                <p class="n"><b>INSTAHUB</b></p>
+                <p class="n"><b>Remote</b></p>
+            </div>
+            <div class="work-title">
+                <p class="n"><i>Software Engineer Intern</i></p>
+                <p class="n"><i>June 2022 - October 2022</i></p>
+            </div>
+            <ul>
+                <li class="n">Wrote 7 AWS Lambda functions (1000+ lines of code) for the company’s website and mobile app using Python
+                    and MySQL on AWS Lambda that gave users a more organized, graphical representation of their data</li>
+                <li class="n">Optimized RAM usage of a standalone project by 50% by modifying existing Python and MySQL code</li>
+                <li class="n">Standardized all lambda and gateway responses of REST API endpoints on API Gateway to give developers and
+                    users uniform client error responses</li>
+                <li class="n">Maintained and updated a live MySQL Database to improve schema design</li>
+            </ul>
+        </section>
+            <!-- Skills -->
+            <p class="t3">Skills</p>
+            <p class="n"><b>Programming: </b>Python (numpy, pandas), SQL, HTML/CSS, JavaScript, Java</p>
+            <p class="n"><b>Tools: </b>Figma, AWS, Android Studio, Tableau, Git/GitHub, Jira, Maze</p>
+            <p class="n"><b>Languages: </b>Japanese (native), Chinese (native), English (fluent), Spanish (conversational)</p>
         </section>
     </main>
     <footer>

@@ -1,18 +1,20 @@
 @import url('global.css');
 
---- FONT CUSTOMIZATIONS ---
+/* --- FONT CUSTOMIZATIONS --- */
 .t1 { /* title header 1 */
     font-size: 20rem;
     font-weight: 800;
 }
 .t2 { /* title header 2 */
-    font-size: 5rem;
+    font-size: 10rem;
+    font-weight: 600;
 }
 .t3 { /* title header 3 */
     font-size: 3rem;
     text-underline-offset: 8px;
     font-weight: 600;
     color: var(--side-color);
+    padding: 2rem 0rem 1rem 0rem;
 }
 .n { /* normal text */
     font-size: 2.2rem;
@@ -23,5 +25,19 @@
     text-underline-offset: 1rem;
     cursor: default;
 }
-
 /* --- MAIN --- */
+.resume-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+hr {
+    margin: 5rem 0rem;
+}
+.work-title {
+    display: flex;
+    justify-content: space-between;
+}
+.skill-list {
+    display: flex;
+}
