@@ -9,8 +9,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="index.css">
-    <script type="text/javascript" src="index.js"></script>
+    <!-- TODO: link css file here -->
+    <script type="text/javascript" src="global.js"></script>
 </head>
 <body>
     <header>
@@ -19,9 +19,9 @@
         </div>
         <div id="shortcut-container">
             <div>
-                <a href="" class="nav_link"><p class="n" id="about">About</p></a>
-                <a href="" class="nav_link"><p class="n" id="projects">Projects</p></a>
-                <a href="" class="nav_link"><p class="n" id="resume">Resume</p></a>
+                <a href="index.html" class="nav_link" aria-disabled="true"><p class="n" id="about">About</p></a>
+                <a href="project.html" class="nav_link"><p class="n" id="projects">Projects</p></a>
+                <a href="resume.html" class="nav_link"><p class="n" id="resume">Resume</p></a>
                 <button id="more" class="round-btn fa fa-bars" onclick="modal(this)"><p></p></button>
             </div>
         </div>
@@ -33,3 +33,22 @@
             </div>
         </div>
         <section id="sec1">
+            <!--TODO: Add content here-->
+        </section>
+    </main>
+    <footer>
+        <p class="t3" id='skill-title'>Get in Touch</p>
+        <div id="contact">
+            <p class="n">I'd love to hear from you! Here's how you can reach me:</p>
+            <div>
+                <a class="fa fa-envelope contact-logo" href="mailto:ktakeda3@gatech.edu"></a>
+                <a class="fa fa-github contact-logo" href="https://github.com/kotoetakeda" target="_blank"></a>
+                <a class="fa fa-linkedin contact-logo" href="https://www.linkedin.com/in/kotoetakeda/" target="_blank"></a>
+            </div>
+        </div>
+        <div id="bye">
+            <i><img src="" alt="bye bye~"></i> <!--TODO: add a waving image-->
+        </div> 
+    </footer>
+</body>
+</html> 

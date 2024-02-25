@@ -1,0 +1,27 @@
+@import url('global.css');
+
+--- FONT CUSTOMIZATIONS ---
+.t1 { /* title header 1 */
+    font-size: 20rem;
+    font-weight: 800;
+}
+.t2 { /* title header 2 */
+    font-size: 5rem;
+}
+.t3 { /* title header 3 */
+    font-size: 3rem;
+    text-underline-offset: 8px;
+    font-weight: 600;
+    color: var(--side-color);
+}
+.n { /* normal text */
+    font-size: 2.2rem;
+}
+#resume { /* 'About' navigation tab */
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    cursor: default;
+}
+
+/* --- MAIN --- */
