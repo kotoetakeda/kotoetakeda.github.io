@@ -4,23 +4,25 @@
     /* global variables */
     --main-color: #fbf7ef;
     --side-color: #911010;
-    --black: #000;
-    --white: #FFF;
+    --round-corner: 100px;
+    --border-width: 0.15rem;
 
     /* general settings */
     font-family: Didot, serif;
     color: black;
-    margin: 1%;
-    padding: 0;
 }
 html {
     font-size: 62.5%;
+    padding: 0;
+    margin: 0;
 }
 body {
     background-color: var(--main-color);
     display: grid;
-    grid-template-rows: 10vh 85vh;
+    grid-template-rows: 10vh auto 30vh;
     overflow-x: hidden;
+    padding: 0;
+    margin: 0;
 }
 p {
     padding: 0;
@@ -71,7 +73,7 @@ header {
     grid-template-columns: 70% 30%;
     height: 100%;
     width: 100%;
-    margin: auto;
+    margin: 1%;
 }
     #logo-container {
         grid-row: 1 / 2;
@@ -96,7 +98,50 @@ header {
             align-items: center;
             height: 50%;
         } 
+
+/* main */
 main {
     grid-row: 2 / 3;
+    margin: 1%;
 }
+
+/* footer */
+footer {
+    grid-row: 3 / 4;
+    background-color: var(--side-color);
+    color: var(--main-color);
+    padding: 3%;
+    display: grid;
+    grid-template-columns: 45% 55%;
+}
+    footer .t3 {
+        color: var(--main-color);
+        padding-bottom: 2rem;
+    }
+    #contact {
+        grid-column: 1 / 2;
+    }
+        #logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        footer .contact-logo {
+            color: var(--main-color);
+            font-size: 3rem;
+            padding: 2rem;
+        }
+        footer .contact-logo .tooltip-text {
+            visibility: none;
+        }
+        footer .contact-logo:hover, footer .contact-logo .tooltip-text {
+            visibility: visible;
+        }
+    #bye {
+        grid-column: 2 / 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+    }
 

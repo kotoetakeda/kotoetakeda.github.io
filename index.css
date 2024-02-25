@@ -17,7 +17,7 @@
 .n { /* normal text */
     font-size: 2.2rem;
 }
-#about {
+#about { /* 'About' navigation tab */
     font-weight: bold;
     text-decoration: underline;
     text-underline-offset: 1rem;
@@ -58,7 +58,7 @@
         #main-text {
             z-index: 0;
         }
-        .profilePic {
+        .profile-pic {
             position: absolute;
             width: auto;
             border-radius: 4000rem;
@@ -82,16 +82,15 @@
 
     /* section 2: short description about myself */
     #sec2 {
-        height: 50vh;
-        width: 100%;
+        width: 80%;
         display: flex;
-        padding: 10% 0% 5% 0%;
+        margin: 10% auto;
+        padding: 5%;
+        border-color: var(--side-color);
+        border-style: solid;
+        border-width: var(--border-width);
+        border-radius: var(--round-corner);
     }
-        #abt-title {
-            transform:rotate(-90deg);
-            width: 50rem;
-            height: 10rem;
-        }
 
     /* section 3: skills */
     #sec3 {
