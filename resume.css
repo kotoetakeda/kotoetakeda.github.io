@@ -30,6 +30,10 @@
     display: flex;
     justify-content: space-between;
 }
+.resume-content {
+    padding-left: 30rem;
+    padding-right: 30rem;
+}
 .skill-list {
     display: flex;
 }
