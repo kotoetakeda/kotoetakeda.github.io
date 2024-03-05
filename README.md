@@ -1,6 +1,6 @@
 # Kotoe Takeda's Website
 This is my personal portfolio website containing my works, my resume, and my life. Come check it out!<br>
-https://www.kotoetakeda.github.io/
+[https://www.kotoetakeda.github.io/](https://kotoetakeda.github.io/)
 
 ## Built with
 - JavaScript
