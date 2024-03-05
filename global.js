@@ -13,6 +13,6 @@ function modal(btn) {
  */
 function openPDF(name) {
     if (name == "resume") {
-        window.open("Kotoe Takeda's Resume.pdf", "_blank");
+        window.open("Kotoe_Takeda_Resume.pdf", "_blank");
     }
 }
