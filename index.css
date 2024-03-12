@@ -63,8 +63,10 @@
         display: flex;
         margin: 10% auto;
         padding: 5%;
+        /* background-color: var(--side-color); */
+        /* color: var(--main-color); */
         border-color: var(--side-color);
-        border-style: solid;
+        border-style: dotted;
         border-width: var(--border-width);
         border-radius: var(--round-corner);
     }

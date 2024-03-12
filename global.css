@@ -145,9 +145,16 @@ main {
     justify-content: center;
     align-items: center;
 }
-hr {
+.l_hr {
     margin: 5rem 0rem;
 }
+.s_hr {
+    margin: 3rem 3rem;
+    background-color: var(--side-color);
+    height: 1px;
+    border: none;
+}
+
 
 /* footer */
 footer {
