@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kotoe Takeda's Website</title>
+    <link rel="apple-touch-icon" sizes="180x18m0" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="global.js"></script>
+</head>
+<body>
+    <header>
+        <div id="logo-container">
+            <a href="index.html"><img id="logo" src="images/logo.png" alt="Kotoe Takeda"></a>
+        </div>
+        <div id="shortcut-container">
+            <div>
+                <a href="index.html" class="nav_link" aria-disabled="true"><p class="n" id="about">About</p></a>
+                <a href="project.html" class="nav_link"><p class="n" id="projects">Projects</p></a>
+                <a href="resume.html" class="nav_link"><p class="n" id="resume">Resume</p></a>
+                <button id="more" class="round-btn fa fa-bars" onclick="modal(this)"><p></p></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="modal-container">
+            <div id="modal">
+                <button id="close" class="round-btn fa fa-close" onclick="modal(this)"></button>
+            </div>
+        </div>
+        <section id="sec1">
+            <div id="main-text">
+                <p class="t1">Kotoe Takeda</h1>
+                <p class="t2">&nbsp;Software Engineer</h2>
+            </div>
+            <img id="profile1" class="profile-pic" src="images/ferry.png" alt="profile picture">
+            <img id="profile2" class="profile-pic" src="images/yukata.png" alt="profile picture">
+            <img id="profile3" class="profile-pic" src="images/sunglasses.JPG" alt="profile picture">
+        </section>
+        <section id="sec2">
+            <!-- <p class="t3" id='abt-title'>About Me</p> -->
+            <div class="abt_dec">
+                <p class="n"><b>Hi there, I'm Kotoe!</b></p>
+                <br><br>
+                <p class="n">
+                    I’m a third-year undergraduate student at the Georgia Institute of Technology, majoring in <b>Computer Science</b> 
+                    with concentrations in people and media. I am also pursuing a certification in <b>Business Analytics</b> on the side.
+                    <br><br>
+                    With a strong foundation in <b>backend</b>, <b>frontend</b>, and <b>UI/UX</b> development, I am passionate about creating accessible products 
+                    that not only exceed client expectations but also cater to user needs. I take pride in my ability to <u>blend technical 
+                    expertise with user-centric design principles</u> to craft seamless experiences.
+                    <br><br>
+                    In my free time, I enjoy <b>baking</b>, <b>crocheting</b>, and <b>dancing</b>. You can find me at Bachata and Salsa socials, 
+                    bustling around in my kitchen baking cream puffs, or curled up on my sofa crocheting. I am also actively involved in 
+                    the tech community through Girls Who Code. Looking ahead, I am excited to continue exploring new opportunities to apply 
+                    and expand my skills for meaningful contributions, both in my academic and personal pursuits.
+                </p>
+            </div>
+        </section>
+        <!-- <section id="sec3">
+        </section> -->
+    </main>
+    <footer>
+        <p class="t3" id='skill-title'>Get in Touch</p>
+        <div id="contact">
+            <p class="n">I'd love to hear from you!</p>
+            <div>
+                <a class="fa fa-envelope contact-logo" href="mailto:ktakeda3@gatech.edu"></a>
+                <a class="fa fa-github contact-logo" href="https://github.com/kotoetakeda" target="_blank"></a>
+                <a class="fa fa-linkedin contact-logo" href="https://www.linkedin.com/in/kotoetakeda/" target="_blank"></a>
+            </div>
+        </div>
+        <div id="bye">
+            <i><img src="" alt="bye bye~"></i> <!--TODO: add a waving image-->
+        </div> 
+    </footer>
+</body>
+</html> 

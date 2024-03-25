@@ -8,75 +8,149 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("JVvkuGQUcVqr53bpI");
+        })();
+    </script>
     <link rel="stylesheet" href="index.css">
-    <script type="text/javascript" src="global.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="index.js"></script>
 </head>
 <body>
-    <header>
-        <div id="logo-container">
-            <a href="index.html"><img id="logo" src="images/logo.png" alt="Kotoe Takeda"></a>
-        </div>
-        <div id="shortcut-container">
-            <div>
-                <a href="index.html" class="nav_link" aria-disabled="true"><p class="n" id="about">About</p></a>
-                <a href="project.html" class="nav_link"><p class="n" id="projects">Projects</p></a>
-                <a href="resume.html" class="nav_link"><p class="n" id="resume">Resume</p></a>
-                <button id="more" class="round-btn fa fa-bars" onclick="modal(this)"><p></p></button>
-            </div>
-        </div>
-    </header>
     <main>
-        <div id="modal-container">
-            <div id="modal">
-                <button id="close" class="round-btn fa fa-close" onclick="modal(this)"></button>
+        <div style="width: 100%; height: 100%;">
+            <p class="m flex" id="alert" style="opacity: 0;">Thanks! I'll get back to you soon :&#41;</p>
+        </div>
+        <!-- Navigation -->
+        <div id="nav">
+            <div class="nav_sec flex" id="logo_div">
+                <div style="text-align: center;">
+                    <img id="logo" src="images/ferry.png" alt="Kotoe Takeda">
+                    <p class="l" style="font-family: 'Trattatello, fantasy'; margin: 5px;"><i>Kotoe Takeda</i></p>
+                </div>
+            </div>
+            <div class="nav_sec flex" id="menu_div">
+                <div style="text-align: center;">
+                    <a href="index.html#sec2"><p id="about" class="m default_selected menu_items" onclick="clicked(this.id, 'menu_items')">About</p></a>
+                    <a href="index.html#sec3"><p id="projects" class="m menu_items" onclick="clicked(this.id, 'menu_items')">Projects</p></a>
+                    <a href="index.html#sec4"><p id="resume" class="m menu_items" onclick="clicked(this.id, 'menu_items')">Resume</p></a>
+                    <a href="index.html#sec5"><p id="contact" class="m menu_items" onclick="clicked(this.id, 'menu_items')">Contact</p></a>
+                </div>
+            </div>
+            <div class="nav_sec flex" id="lang_div">
+                <a><p id="eng" class="s default_selected lang_items" onclick="clicked(this.id, 'lang_items')">English</p></a>
+                <p class="s">&nbsp;|&nbsp;</p>
+                <a><p id="jap" class="s lang_items" onclick="clicked(this.id, 'lang_items')">日本語</p></a>
+                <p class="s">&nbsp;|&nbsp;</p>
+                <a><p id="chi" class="s lang_items" onclick="clicked(this.id, 'lang_items')">中文</p></a>
             </div>
         </div>
-        <section id="sec1">
-            <div id="main-text">
-                <p class="t1">Kotoe Takeda</h1>
-                <p class="t2">&nbsp;Software Engineer</h2>
-            </div>
-            <img id="profile1" class="profile-pic" src="images/ferry.png" alt="profile picture">
-            <img id="profile2" class="profile-pic" src="images/yukata.png" alt="profile picture">
-            <img id="profile3" class="profile-pic" src="images/sunglasses.JPG" alt="profile picture">
-        </section>
-        <section id="sec2">
-            <!-- <p class="t3" id='abt-title'>About Me</p> -->
-            <div class="abt_dec">
-                <p class="n"><b>Hi there, I'm Kotoe!</b></p>
-                <br><br>
-                <p class="n">
-                    I’m a third-year undergraduate student at the Georgia Institute of Technology, majoring in <b>Computer Science</b> 
-                    with concentrations in people and media. I am also pursuing a certification in <b>Business Analytics</b> on the side.
-                    <br><br>
-                    With a strong foundation in <b>backend</b>, <b>frontend</b>, and <b>UI/UX</b> development, I am passionate about creating accessible products 
-                    that not only exceed client expectations but also cater to user needs. I take pride in my ability to <u>blend technical 
-                    expertise with user-centric design principles</u> to craft seamless experiences.
-                    <br><br>
-                    In my free time, I enjoy <b>baking</b>, <b>crocheting</b>, and <b>dancing</b>. You can find me at Bachata and Salsa socials, 
-                    bustling around in my kitchen baking cream puffs, or curled up on my sofa crocheting. I am also actively involved in 
-                    the tech community through Girls Who Code. Looking ahead, I am excited to continue exploring new opportunities to apply 
-                    and expand my skills for meaningful contributions, both in my academic and personal pursuits.
-                </p>
-            </div>
-        </section>
-        <!-- <section id="sec3">
-        </section> -->
+
+        <!-- Main Page -->
+        <div id="main">
+            <section class="sections flex" id="sec1" class="flex">
+                <div style="text-align: center;">
+                    <p class="xxxl">Kotoe Takeda</p>
+                    <p class="xl"><i>Software Engineer</i></p>
+                </div>
+            </section>
+            <section class="sections flex" id="sec2" class="flex">
+                <div style="width: 80%">
+                    <p class="l" style="color: var(--dark-red)"><b>About</b></p>
+                    <p class="m"><b>Hi there, I'm Kotoe!</b></p>
+                    <p class="m">
+                        I’m a third-year undergraduate student at the Georgia Institute of Technology, majoring in <b>Computer Science</b> 
+                        with concentrations in people and media. I am also pursuing a certification in <b>Business Analytics</b> on the side.
+                        <br><br>
+                        With a strong foundation in <b>backend</b>, <b>frontend</b>, and <b>UI/UX</b> development, I am passionate about creating accessible products 
+                        that not only exceed client expectations but also cater to user needs. I take pride in my ability to <u>blend technical 
+                        expertise with user-centric design principles</u> to craft seamless experiences.
+                        <br><br>
+                        In my free time, I enjoy <b>baking</b>, <b>crocheting</b>, and <b>dancing</b>. You can find me at Bachata and Salsa socials, 
+                        bustling around in my kitchen baking cream puffs, or curled up on my sofa crocheting. I am also actively involved in 
+                        the tech community through Girls Who Code. Looking ahead, I am excited to continue exploring new opportunities to apply 
+                        and expand my skills for meaningful contributions, both in my academic and personal pursuits.
+                    </p>
+                </div>
+            </section>
+            <section class="sections flex" id="sec3" class="flex">
+                <div style="width: 80%">
+                    <p class="l" style="color: var(--dark-red)"><b>Projects</b></p>
+                    <div>
+                        <div class="flex">
+                            <div class="proj_div" id="med" style="width: 100rem;">
+                                <p class="g" style="padding-left: 2rem;"><b><mark>Medical Innovator</mark></b></p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="proj_div" id="marta">
+                                <p class="g" style="padding-left: 2rem;"><b><mark>The Marta System</mark></b></p>
+                            </div>
+                            <div class="proj_div" id="health">
+                                <p class="g" style="padding-left: 2rem;"><b><mark>Healthcare Technology</mark></b></p>
+                            </div>
+                            <div class="proj_div" id="stress">
+                                <p class="g" style="padding-left: 2rem;"><b><mark>Stress App</mark></b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sections flex" id="sec4" class="flex">
+                <div style="width: 80%">
+                    <div class="flex" style="justify-content: start;">
+                        <p class="l" style="color: var(--dark-red)"><b>Resume&nbsp;</b></p>
+                        <a href="Kotoe_Takeda_Resume.pdf" target="_blank">
+                            <svg class="flex" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="1.3rem" width="1.3rem">
+                            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - 
+                                https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 
+                                    265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 
+                                    32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 
+                                    112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 
+                                    14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 
+                                    0 32-14.3 32-32s-14.3-32-32-32H80z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="flex">
+                        <iframe src="Kotoe_Takeda_Resume.pdf"></iframe>
+                    </div>
+                </div>
+            </section>
+            <section class="sections flex" id="sec5" class="flex">
+                <div style="width: 80%">
+                    <p class="l" style="color: var(--dark-red)"><b>Contact</b></p>
+                    <div>
+                        <p class="m">&nbsp;I would love to hear from you!</p>
+                        <form id="contact_form">
+                            <div class="flex">
+                                <input class="contact_inputs" id="name" type="text" value="" placeholder="Full Name*" required>
+                                <input class="contact_inputs" id="email" type="email" value="" placeholder="Email Address*" required>
+                            </div>
+                            <div class="flex">
+                                <textarea class="contact_inputs" id="message" type="text" value="" placeholder="Message"></textarea>
+                            </div>
+                            <div class="flex">
+                                <button id="submit" type="submit" value="submit" class="m">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="sections flex" id="sec6">
+                <div id="contact_link" style="display:flex; justify-content:space-evenly; align-items: center;">
+                    <p class="m"><a class="fa fa-envelope contact-logo" style="color: white;" href="mailto:ktakeda3@gatech.edu"></a></p>
+                    <p class="m"><a class="fa fa-github contact-logo" style="color: white;" href="https://github.com/kotoetakeda" target="_blank"></a></p>
+                    <p class="m"><a class="fa fa-linkedin contact-logo" style="color: white;" href="https://www.linkedin.com/in/kotoetakeda/" target="_blank"></a></p>
+                </div>
+            </section>
+        </div>
     </main>
-    <footer>
-        <p class="t3" id='skill-title'>Get in Touch</p>
-        <div id="contact">
-            <p class="n">I'd love to hear from you!</p>
-            <div>
-                <a class="fa fa-envelope contact-logo" href="mailto:ktakeda3@gatech.edu"></a>
-                <a class="fa fa-github contact-logo" href="https://github.com/kotoetakeda" target="_blank"></a>
-                <a class="fa fa-linkedin contact-logo" href="https://www.linkedin.com/in/kotoetakeda/" target="_blank"></a>
-            </div>
-        </div>
-        <div id="bye">
-            <i><img src="" alt="bye bye~"></i> <!--TODO: add a waving image-->
-        </div> 
-    </footer>
 </body>
-</html> 
+</html>

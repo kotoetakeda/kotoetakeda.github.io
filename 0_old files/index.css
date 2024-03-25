@@ -1,0 +1,79 @@
+@import url('global.css');
+
+/* --- FONT CUSTOMIZATIONS --- */
+.t1 { /* title header 1 */
+    font-size: 20rem;
+    font-weight: 800;
+}
+.t2 { /* title header 2 */
+    font-size: 5rem;
+}
+.t3 { /* title header 3 */
+    font-size: 3rem;
+    text-underline-offset: 8px;
+    font-weight: 600;
+    color: var(--side-color);
+}
+.n { /* normal text */
+    font-size: 2.2rem;
+}
+#about { /* 'About' navigation tab */
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    cursor: default;
+}
+
+/* --- MAIN --- */
+    /* section 1: introduction */
+    #sec1 {
+        height: 99vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+        #main-text {
+            z-index: 0;
+        }
+        .profile-pic {
+            position: absolute;
+            width: auto;
+            border-radius: 4000rem;
+        }
+        #profile1 {
+            top: 60%;
+            left: 75%;
+            z-index: -1;
+            height: 30rem;
+        }
+        #profile2 {
+            top: 10%;
+            left: 55%;
+            height: 25rem;
+        }
+        #profile3 {
+            top: 30%;
+            left: 30%;
+            height: 15rem;
+        }
+
+    /* section 2: short description about myself */
+    #sec2 {
+        width: 80%;
+        display: flex;
+        margin: 10% auto;
+        padding: 5%;
+        /* background-color: var(--side-color); */
+        /* color: var(--main-color); */
+        border-color: var(--side-color);
+        border-style: dotted;
+        border-width: var(--border-width);
+        border-radius: var(--round-corner);
+    }
+
+    /* section 3: skills */
+    /* #sec3 {
+        margin: 5% 5%;
+        padding: 2% 2%;
+        height: 70vh;
+    } */

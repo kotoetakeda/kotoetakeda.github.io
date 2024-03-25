@@ -1,79 +1,255 @@
-@import url('global.css');
+:root {
+    /* global variables */
+    --light-cream: #fbf7ef;
+    --light-grey: #e6e5e4;
+    --dark-red: #911010;
+    --border: rgba(236, 236, 236, 0.5);
 
-/* --- FONT CUSTOMIZATIONS --- */
-.t1 { /* title header 1 */
-    font-size: 20rem;
+    /* general settings */
+    font-family: Didot, serif;
+    color: black;
+}
+html {
+    font-size: 62.5%;
+    padding: 0;
+    margin: 0;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* FONT SIZES */
+.xxxl {
+    font-size: 8rem;
     font-weight: 800;
+    padding: 0;
+    margin: 0;
 }
-.t2 { /* title header 2 */
-    font-size: 5rem;
+.xxl {
+    font-size: 6rem;
+    padding: 0;
+    margin: 0;
 }
-.t3 { /* title header 3 */
+.xl {
+    font-size: 4rem;
+    padding: 0;
+    margin: 0;
+}
+.l {
     font-size: 3rem;
-    text-underline-offset: 8px;
-    font-weight: 600;
-    color: var(--side-color);
 }
-.n { /* normal text */
+.g {
     font-size: 2.2rem;
 }
-#about { /* 'About' navigation tab */
-    font-weight: bold;
-    text-decoration: underline;
-    text-underline-offset: 1rem;
-    cursor: default;
+.m {
+    font-size: 1.8rem;
+}
+.s {
+    font-size: 1.2rem;
 }
 
-/* --- MAIN --- */
-    /* section 1: introduction */
-    #sec1 {
-        height: 99vh;
+/* SETTINGS */
+mark {
+    background: var(--light-cream);
+    padding: 0.5rem 1rem;
+}
+button {
+    width: 5rem;
+    padding: 1rem;
+    background-color: var(--dark-red);
+    color: white;
+    width: 25rem;
+    padding: 1.5rem;
+    margin: 1rem;
+    font-family: Didot, serif;
+    border: none;
+}
+a, a:visited {
+    color: black;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+a:hover, a:active {
+    color: var(--dark-red);
+    cursor: pointer;
+    font-weight: 800;
+    transform: scale(1.1);
+}
+#menu_div p:hover {
+    transform: scale(1.1);
+}
+.default_selected {
+    color: var(--dark-red);
+    font-weight: 800;
+    cursor: default;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.alertGood {
+    padding: 1rem 3rem;
+    background-color: lightgreen;
+    position: fixed;
+    z-index: 100;
+    top: 5%;
+    left: 50%;
+    opacity: 0;
+    animation: alertAnimation 5s forwards;
+}
+@keyframes alertAnimation {
+    0%   {opacity: 1;}
+    80%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+/* ----- MAIN ----- */
+main {
+    display: grid;
+    grid-template-columns: 15vw 85vw;
+    padding: 0;
+    margin: 0;
+}
+    /* NAVIGATION BAR */
+    #nav {
+        position: fixed;
+        height: 100vh;
+        width: 15vw;
+        grid-column: 1 / 2;
+        border-style: none solid none none;
+        border-color: var(--border);
+        border-width: 2px;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        background-color: var(--light-cream);
+    }
+
+        #logo_div {
+            grid-row: 1 / 2;
+        }
+            #logo {
+                height: 10rem;
+                width: auto;
+                border-radius: 50px;
+            }
+        #menu_div {
+            grid-row: 2 / 3;
+        }
+        #lang_div {
+            grid-row: 3 / 4;
+            align-items: end;
+            padding-bottom: 3rem;
+        }
+            .lang_link {
+                color: var(--border);
+            }
+
+    /* MAIN */
+    #main {
+        background-color: white;
+        height: 100vh;
         width: 100%;
-        display: flex;
-        align-items: center;
+        grid-column: 2 / 3;
+        padding: 0;
+        margin: 0;
     }
-        #main-text {
-            z-index: 0;
-        }
-        .profile-pic {
-            position: absolute;
-            width: auto;
-            border-radius: 4000rem;
-        }
-        #profile1 {
-            top: 60%;
-            left: 75%;
-            z-index: -1;
-            height: 30rem;
-        }
-        #profile2 {
-            top: 10%;
-            left: 55%;
-            height: 25rem;
-        }
-        #profile3 {
-            top: 30%;
-            left: 30%;
-            height: 15rem;
+        section {
+            width: 100%;
+            height: fit-content;
+            padding: 5rem 0rem;
+            margin: auto;
         }
 
-    /* section 2: short description about myself */
-    #sec2 {
-        width: 80%;
-        display: flex;
-        margin: 10% auto;
-        padding: 5%;
-        /* background-color: var(--side-color); */
-        /* color: var(--main-color); */
-        border-color: var(--side-color);
-        border-style: dotted;
-        border-width: var(--border-width);
-        border-radius: var(--round-corner);
-    }
+            #sec1 {
+                height: 90vh;
+                padding: 0rem;
+                background-image: url('images/ferry.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-color: var(--dark-red);
+                color: white;
+            }
+/* 
+            #sec2 {
+                height: 55vh;
+            } */
 
-    /* section 3: skills */
-    /* #sec3 {
-        margin: 5% 5%;
-        padding: 2% 2%;
-        height: 70vh;
-    } */
+            #sec3 {
+                /* height: 100vh; */
+                background-color: var(--light-grey);
+            }
+                .proj_div {
+                    height: 33rem;
+                    width: 33rem;
+                    background-color: var(--dark-red);
+                    margin: 1rem;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    overflow: hidden;
+                    transition: transform 0.3s ease;
+                    color: white;
+                }
+                .proj_div:hover {
+                    transform: scale(1.05);
+                }
+                    #med {
+                        background-image: url(images/data.jpg);  
+                    }
+                    #marta {
+                        background-image: url(images/train.jpg);
+                    }
+                    #health {
+                        background-image: url(images/medicine.jpg);
+                    }
+                    #stress {
+                        background-image: url(images/stress.jpg);
+                    }
+
+            /* #sec4 {
+                height: 180vh;
+            } */
+                iframe {
+                    width: 100vw;
+                    height: 129rem;
+                }
+
+            #sec5 {
+                /* height: 60vh; */
+                background-color: var(--light-grey);
+            }
+                .contact_inputs {
+                    font-family: Didot, serif;
+                    font-size: 1.8rem;
+                    width: 60rem;
+                    padding: 1.5rem;
+                    margin: 1rem;
+                    border-style: none none none solid;
+                    border-color: var(--dark-red);
+                }
+
+                input:focus {
+                    border: 0.5px solid var(--dark-red); /* TODO */
+                }
+                    #message {
+                        width: 100rem;
+                        height: 10rem;
+                    }
+
+            #sec6 {
+                height: 8vh;
+                padding: 0rem;
+                background-color: var(--dark-red);
+                color: white;
+                display: grid;
+                grid-template-columns: 35% 40% 25%;
+            }
+                #contact_msg {
+                    grid-column: 1 / 2;
+                }
+                #contact_link {
+                    grid-column: 3 / 4;
+                    margin: 0rem 5rem;
+                }
+
