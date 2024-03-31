@@ -36,30 +36,46 @@
             </div>
             <div class="nav_sec flex" id="menu_div">
                 <div style="text-align: center;">
-                    <a href="index.html#sec2"><p id="about" class="m default_selected menu_items" onclick="clicked(this.id, 'menu_items')">About</p></a>
-                    <a href="index.html#sec3"><p id="projects" class="m menu_items" onclick="clicked(this.id, 'menu_items')">Projects</p></a>
-                    <a href="index.html#sec4"><p id="resume" class="m menu_items" onclick="clicked(this.id, 'menu_items')">Resume</p></a>
-                    <a href="index.html#sec5"><p id="contact" class="m menu_items" onclick="clicked(this.id, 'menu_items')">Contact</p></a>
+                    <a href="index.html#about"><p id="about_menu" class="m default_selected menu_items" onclick="clicked(this.id, 'menu_items')">About</p></a>
+                    <a href="index.html#projects"><p id="projects_menu" class="m menu_items" onclick="clicked(this.id, 'menu_items')">Projects</p></a>
+                    <a href="index.html#contact"><p id="contact_menu" class="m menu_items" onclick="clicked(this.id, 'menu_items')">Contact</p></a>
+                    <!-- <a href="index.html#resume"><p id="resume" class="m menu_items" onclick="clicked(this.id, 'menu_items')">Resume</p></a> -->
+                    <a href="Kotoe_Takeda_Resume.pdf" id="resume_menu" class="m menu_items flex" target="_blank">Resume&nbsp;
+                        <svg class="flex" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="1rem" width="1rem">
+                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - 
+                            https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 
+                                265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 
+                                32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 
+                                112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 
+                                14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 
+                                0 32-14.3 32-32s-14.3-32-32-32H80z"/>
+                        </svg>
+                    </a>
                 </div>
             </div>
             <div class="nav_sec flex" id="lang_div">
                 <a><p id="eng" class="s default_selected lang_items" onclick="clicked(this.id, 'lang_items')">English</p></a>
-                <p class="s">&nbsp;|&nbsp;</p>
+                <!-- <p class="s">&nbsp;|&nbsp;</p>
                 <a><p id="jap" class="s lang_items" onclick="clicked(this.id, 'lang_items')">日本語</p></a>
                 <p class="s">&nbsp;|&nbsp;</p>
-                <a><p id="chi" class="s lang_items" onclick="clicked(this.id, 'lang_items')">中文</p></a>
+                <a><p id="chi" class="s lang_items" onclick="clicked(this.id, 'lang_items')">中文</p></a> -->
             </div>
         </div>
 
         <!-- Main Page -->
         <div id="main">
-            <section class="sections flex" id="sec1" class="flex">
+
+            <!-- Photo Section -->
+            <section class="sections flex" id="photo" class="flex">
                 <div style="text-align: center;">
                     <p class="xxxl">Kotoe Takeda</p>
                     <p class="xl"><i>Software Engineer</i></p>
                 </div>
             </section>
-            <section class="sections flex" id="sec2" class="flex">
+
+            <!-- About Section -->
+            <section class="sections flex" id="about" class="flex">
                 <div style="width: 80%">
                     <p class="l" style="color: var(--dark-red)"><b>About</b></p>
                     <p class="m"><b>Hi there, I'm Kotoe!</b></p>
@@ -78,52 +94,46 @@
                     </p>
                 </div>
             </section>
-            <section class="sections flex" id="sec3" class="flex">
+
+            <!-- Project Section -->
+            <section class="sections flex" id="projects" class="flex">
                 <div style="width: 80%">
                     <p class="l" style="color: var(--dark-red)"><b>Projects</b></p>
                     <div>
                         <div class="flex">
-                            <div class="proj_div" id="med" style="width: 100rem;">
-                                <p class="g" style="padding-left: 2rem;"><b><mark>Medical Innovator</mark></b></p>
+                            <div class="proj_div" id="med" style="width: 125rem;">
+                                <p class="g"><b><mark>Medical Innovator</mark></b></p>
                             </div>
                         </div>
                         <div class="flex">
                             <div class="proj_div" id="marta">
-                                <p class="g" style="padding-left: 2rem;"><b><mark>The Marta System</mark></b></p>
+                                <p class="g"><b><mark>The Marta System</mark></b></p>
                             </div>
                             <div class="proj_div" id="health">
-                                <p class="g" style="padding-left: 2rem;"><b><mark>Healthcare Technology</mark></b></p>
+                                <p class="g"><b><mark>Healthcare Technology</mark></b></p>
                             </div>
                             <div class="proj_div" id="stress">
-                                <p class="g" style="padding-left: 2rem;"><b><mark>Stress App</mark></b></p>
+                                <p class="g"><b><mark>Stress App</mark></b></p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="sections flex" id="sec4" class="flex">
+
+            <!-- Resume Section -->
+            <!-- <section class="sections flex" id="resume" class="flex">
                 <div style="width: 80%">
                     <div class="flex" style="justify-content: start;">
                         <p class="l" style="color: var(--dark-red)"><b>Resume&nbsp;</b></p>
-                        <a href="Kotoe_Takeda_Resume.pdf" target="_blank">
-                            <svg class="flex" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="1.3rem" width="1.3rem">
-                            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - 
-                                https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                                <path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 
-                                    265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 
-                                    32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 
-                                    112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 
-                                    14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 
-                                    0 32-14.3 32-32s-14.3-32-32-32H80z"/>
-                            </svg>
-                        </a>
                     </div>
                     <div class="flex">
                         <iframe src="Kotoe_Takeda_Resume.pdf"></iframe>
                     </div>
                 </div>
-            </section>
-            <section class="sections flex" id="sec5" class="flex">
+            </section> -->
+
+            <!-- Contact Section -->
+            <section class="sections flex" id="contact" class="flex">
                 <div style="width: 80%">
                     <p class="l" style="color: var(--dark-red)"><b>Contact</b></p>
                     <div>
@@ -143,6 +153,8 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Footer -->
             <section class="sections flex" id="sec6">
                 <div id="contact_link" style="display:flex; justify-content:space-evenly; align-items: center;">
                     <p class="m"><a class="fa fa-envelope contact-logo" style="color: white;" href="mailto:ktakeda3@gatech.edu"></a></p>

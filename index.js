@@ -3,10 +3,12 @@ window.onbeforeunload = () => {
 }
 
 function clicked(id, className) {
-    console.log(id)
-    console.log(className)
+  if (document.getElementById(id)) {
     elem = document.getElementById(id);
-    items = document.getElementsByClassName(className);
+  } else {
+    return
+  }
+  items = document.getElementsByClassName(className);
     for (let i = 0; i < items.length; i++) {
         items[i].classList.remove('default_selected');
     }
@@ -14,23 +16,31 @@ function clicked(id, className) {
 }
 
 window.onload = function() {
-  let sections = document.getElementsByClassName("sections");
-  let sec = [];
-  for (let i = 0; i < sections.length; i++) {
-    let pos = sections[i].getBoundingClientRect().y;
-    sec += [pos, sections[i]];
-  }
-  console.log(sec);
+  const sections = document.querySelectorAll('.sections');
 
-  window.addEventListener('scroll', function(event) {
-    for (let i = 0; i < sec.length; i++) {
-      if (window.scrollY >= sec[i][0]) {
-
-      }
+    // Function to check if an element is in viewport
+    function isInViewport(element) {
+      const rect = element.getBoundingClientRect();
+      return (
+          rect.top >= 0 && rect.top <= (window.innerHeight / 2 || document.documentElement.clientHeight / 2) &&
+          rect.left >= 0 && rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
     }
-    console.log(window.scrollY);
-  })
-  var alert = document.getElementById("alert");
+
+    // Function to handle scroll event
+    function onScroll() {
+        sections.forEach((section) => {
+            if (isInViewport(section)) {
+              clicked(section.id + "_menu", 'menu_items');
+              // console.log(`Section "${section.id}" is in view.`);
+            }
+        });
+    }
+
+    // Add scroll event listener
+    window.addEventListener('scroll', onScroll);
+
+  
   // var span = document.getElementsByClassName("close")[0];
   document.getElementById("contact_form").addEventListener("submit", function(event) {
       event.preventDefault();

@@ -101,7 +101,7 @@ a:hover, a:active {
 }
 @keyframes alertAnimation {
     0%   {opacity: 1;}
-    80%  {opacity: 1;}
+    70%  {opacity: 1;}
     100% {opacity: 0;}
 }
 
@@ -162,7 +162,8 @@ main {
             margin: auto;
         }
 
-            #sec1 {
+            /* Photo Section */
+            #photo {
                 height: 90vh;
                 padding: 0rem;
                 background-image: url('images/ferry.png');
@@ -171,18 +172,20 @@ main {
                 background-color: var(--dark-red);
                 color: white;
             }
-/* 
-            #sec2 {
+
+            /* About Section */
+            /* #about {
                 height: 55vh;
             } */
 
-            #sec3 {
+            /* Project Section */
+            #projects {
                 /* height: 100vh; */
                 background-color: var(--light-grey);
             }
                 .proj_div {
-                    height: 33rem;
-                    width: 33rem;
+                    height: 40rem;
+                    width: 39rem;
                     background-color: var(--dark-red);
                     margin: 1rem;
                     background-size: cover;
@@ -190,6 +193,7 @@ main {
                     overflow: hidden;
                     transition: transform 0.3s ease;
                     color: white;
+                    padding-left: 2rem;
                 }
                 .proj_div:hover {
                     transform: scale(1.05);
@@ -207,7 +211,8 @@ main {
                         background-image: url(images/stress.jpg);
                     }
 
-            /* #sec4 {
+            /* Resume Section */
+            /* #resume {
                 height: 180vh;
             } */
                 iframe {
@@ -215,30 +220,33 @@ main {
                     height: 129rem;
                 }
 
-            #sec5 {
-                /* height: 60vh; */
+            /* Contact Section */
+            /* #contact {
+                height: 60vh;
                 background-color: var(--light-grey);
-            }
+            } */
                 .contact_inputs {
                     font-family: Didot, serif;
                     font-size: 1.8rem;
                     width: 60rem;
-                    padding: 1.5rem;
+                    padding: 2rem;
                     margin: 1rem;
-                    border-style: none none none solid;
-                    border-color: var(--dark-red);
+                    /* border-style: none none none solid; */
+                    border-style: solid;
+                    border-color: var(--light-grey) var(--light-grey) var(--light-grey) var(--dark-red);
                 }
 
                 input:focus {
                     border: 0.5px solid var(--dark-red); /* TODO */
                 }
                     #message {
-                        width: 100rem;
+                        width: 125rem;
                         height: 10rem;
                     }
 
+            /* Footer */
             #sec6 {
-                height: 8vh;
+                height: 6vh;
                 padding: 0rem;
                 background-color: var(--dark-red);
                 color: white;
@@ -251,5 +259,6 @@ main {
                 #contact_link {
                     grid-column: 3 / 4;
                     margin: 0rem 5rem;
+                    padding: 0;
                 }
 
