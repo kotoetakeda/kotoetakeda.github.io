@@ -149,11 +149,10 @@ main {
     /* MAIN */
     #main {
         background-color: white;
-        height: 100vh;
-        width: 100%;
         grid-column: 2 / 3;
         padding: 0;
         margin: 0;
+        height: fit-content;
     }
         section {
             width: 100%;
@@ -184,7 +183,7 @@ main {
                 background-color: var(--light-grey);
             }
                 .proj_div {
-                    height: 40rem;
+                    height: 33rem;
                     width: 39rem;
                     background-color: var(--dark-red);
                     margin: 1rem;
@@ -215,10 +214,10 @@ main {
             /* #resume {
                 height: 180vh;
             } */
-                iframe {
+                /* iframe {
                     width: 100vw;
                     height: 129rem;
-                }
+                } */
 
             /* Contact Section */
             /* #contact {
@@ -246,16 +245,12 @@ main {
 
             /* Footer */
             #sec6 {
-                height: 6vh;
                 padding: 0rem;
                 background-color: var(--dark-red);
                 color: white;
                 display: grid;
                 grid-template-columns: 35% 40% 25%;
             }
-                #contact_msg {
-                    grid-column: 1 / 2;
-                }
                 #contact_link {
                     grid-column: 3 / 4;
                     margin: 0rem 5rem;

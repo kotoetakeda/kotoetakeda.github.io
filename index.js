@@ -1,5 +1,6 @@
 window.onbeforeunload = () => {
   window.scrollTo(0, 0);
+  document.body.style.display = 'none'; // TODO: make a loading page
 }
 
 function clicked(id, className) {
@@ -16,9 +17,9 @@ function clicked(id, className) {
 }
 
 window.onload = function() {
+  document.body.style.display = 'block';
   const sections = document.querySelectorAll('.sections');
 
-    // Function to check if an element is in viewport
     function isInViewport(element) {
       const rect = element.getBoundingClientRect();
       return (
@@ -27,21 +28,17 @@ window.onload = function() {
       );
     }
 
-    // Function to handle scroll event
     function onScroll() {
         sections.forEach((section) => {
             if (isInViewport(section)) {
               clicked(section.id + "_menu", 'menu_items');
-              // console.log(`Section "${section.id}" is in view.`);
             }
         });
     }
 
-    // Add scroll event listener
     window.addEventListener('scroll', onScroll);
 
   
-  // var span = document.getElementsByClassName("close")[0];
   document.getElementById("contact_form").addEventListener("submit", function(event) {
       event.preventDefault();
       emailjs.send("service_sduk1tm","template_qrcwnlo",{
@@ -54,15 +51,6 @@ window.onload = function() {
           document.getElementById("email").value = "";
           document.getElementById("message").value = "";
           document.getElementById("alert").classList.add('alertGood');
-
-          // span.onclick = function() {
-          //     modal.style.display = "none";
-          // }
-          // window.onclick = function(event) { //TODO: not working
-          //     if (event.target == modal) {
-          //         modal.style.display = "none";
-          //     }
-          // }
       })
       .catch(err => {
         document.getElementById("alert").classList.add('alertBad');
