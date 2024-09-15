@@ -36,9 +36,9 @@ const Home = () => {
             <Flex justify={'center'} align={'left'} flexDirection={'column'} width={'100%'} py={'5rem'}>
                 <Text fontSize={'5xl'} fontWeight={'300'}>Recent Work</Text>
                 <Flex justify={'space-between'} align={'left'} width={'100%'} py={'2rem'}>
-                    <Box bg={'grey'} boxSize={'23rem'}>Google Qualpat</Box>
-                    <Box bg={'grey'} boxSize={'23rem'}>SAQ Assistant</Box>
-                    <Box bg={'grey'} boxSize={'23rem'}>Marta</Box>
+                    <Box bg={colors.body} color={'white'} boxSize={'23rem'}>Google Qualpat</Box>
+                    <Box bg={colors.body} color={'white'} boxSize={'23rem'}>SAQ Assistant</Box>
+                    <Box bg={colors.body} color={'white'} boxSize={'23rem'}>Marta</Box>
                 </Flex>
             </Flex>
         </Box>
