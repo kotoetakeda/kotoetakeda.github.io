@@ -1,17 +1,34 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import { createRoot } from 'react-dom/client';
+import App from "./App";
+import { extendTheme } from "@chakra-ui/react";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const customTheme = extendTheme({
+  styles: {
+    global: {
+      body: {
+        bg: "#F5F5F5",
+        color: "rgba(0, 0, 0, 0.9)",
+        fontFamily: "serif",
+        fontSize: "10px",
+        fontWeight: "100",
+      },
+    },
+  },
+  colors: {
+    white: "#F5F5F5",
+    white_inactive: "rgba(250, 250, 250, 0.7)",
+    gray: "#F0F0F0",
+    cyan: "#C2EDEA",
+    mauve: "#DED3DE",
+    navy: "#454447",
+    body: "rgba(0, 0, 0, 0.9)",
+    body_inactive: "rgba(0, 0, 0, 0.4)",
+    gradient: "linear-gradient(0deg, #F5F5F5 0%, #DED3DE 90%)", // "linear-gradient(45deg, #C2EDEA 0%, #DED3DE 95%)"
+  },
+});
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const root = createRoot(document.getElementById('root'));
+root.render(<App />);
+
+export default customTheme;
