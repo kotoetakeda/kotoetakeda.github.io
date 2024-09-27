@@ -105,7 +105,7 @@ const Contact = () => {
                     onChange={handleChange} />
                 </FormControl>
               </Flex>
-              <Button label={'Send'} bg={colors.body} type={'submit'} color={colors.white}>Send</Button>
+              <Button label={'Send'} bg={colors.body} type={'submit'} color={colors.white} py={'1rem'} px={'3rem'}>Send</Button>
             </form>
           </Box>
         </Flex>

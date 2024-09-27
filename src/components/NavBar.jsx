@@ -24,7 +24,6 @@ const NavBar = () => {
                         <Text 
                             color={colors.body} 
                             fontSize={'3xl'} 
-                            _hover={{'color': colors.body_inactive}}
                         >
                             KOTOE TAKEDA
                         </Text>
