@@ -10,7 +10,7 @@ const Header = () => {
     <div className="flex flex-col sm:flex-col md:flex-row lg:flex-row xl:flex-row gap-1 mb-12">
       {/* Site Name */}
       <div className="flex flex-1 justify-center sm:justify-center md:justify-start lg:justify-start xl:justify-start">
-        <NavLink to={"/website"} className={NameFont}>
+        <NavLink to={"/"} className={NameFont}>
           <p>Kotoe Takeda</p>
         </NavLink>
       </div>
@@ -18,7 +18,7 @@ const Header = () => {
       {/* Navigation Links */}
       <div className="flex flex-1 justify-center sm:justify-center md:justify-end lg:justify-end xl:justify-end gap-5">
         <NavLink
-          to="/website"
+          to="/"
           className={({ isActive }) =>
             `${NavFont} ${
               isActive
@@ -40,7 +40,7 @@ const Header = () => {
         > About </NavLink>
 
         <a
-          href="/website/Kotoe_Takeda_Resume.pdf"
+          href="/Kotoe_Takeda_Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className={`${NavFont} text-stone-400 hover:text-stone-950 hover:underline hover:underline-offset-8`}
