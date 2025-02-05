@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Profile_Home from "./images/profile-home.jpeg";
+import Profile_Home from "./images/profile-home.png";
 import Handshake from "./images/robot-human-handshake.jpg";
 
 const Home = () => {
@@ -22,20 +22,25 @@ const Home = () => {
       <Header />
       <div className="flex flex-col flex-1">
         {/* Intro */}
-        <div className= {`flex flex-1 items-end justify-start pt-40 pb-24`}>
+        <div className= {`flex flex-1 flex-row items-end justify-start pt-40 pb-24`}>
           <p className={IntroFont}>
             <b>I'm Kotoe</b> &mdash; a developer who understands design, and a designer who speaks code
           </p>
         </div>
 
         {/* Profile Pic */}
-        <div className="flex flex-1 w-[80vw] items-center justify-end">
-          <img className="object-cover rounded-full" src={Profile_Home} />
+        <div className="flex justify-end w-full px-10">
+          <img
+            src={Profile_Home}
+            alt="Profile picture"
+            className = "w-1/4 object-cover"
+          />
         </div>
+
 
         {/*************/}
         {/* Impact */}
-        <div className="flex flex-1 justify-center pt-60 py-32">
+        <div className="flex justify-center pt-60 py-32">
           <p className={SectionFont}>My Impact</p>
         </div>
         
