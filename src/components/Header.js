@@ -1,17 +1,28 @@
-import React from 'react';
+import React from "react";
 import { NavLink } from "react-router-dom";
 
-
 const Header = () => {
-  const NameFont = "text-lg sm:text-lg md:text-lg lg:text-xl xl:text-2xl header font-normal text-stone-950";
-  const NavFont = "text-base sm:text-base md:text-lg lg:text-xl xl:text-2xl header font-normal text-stone-950";
+  const NameFont =
+    "text-lg sm:text-lg md:text-lg lg:text-xl xl:text-2xl header font-normal text-stone-950";
+  const NavFont =
+    "text-base sm:text-base md:text-lg lg:text-xl xl:text-2xl header font-normal text-stone-950";
+
+  // Name to be animated
+  const name = "Kotoe Takeda";
 
   return (
     <div className="flex flex-col sm:flex-col md:flex-row lg:flex-row xl:flex-row gap-1 mb-12">
-      {/* Site Name */}
       <div className="flex flex-1 justify-center sm:justify-center md:justify-start lg:justify-start xl:justify-start">
-        <NavLink to={"/"} className={NameFont}>
-          <p>Kotoe Takeda</p>
+        <NavLink to={"/"} className={`${NameFont} inline-block group`}>
+          {name.split("").map((letter, index) => (
+            <span
+              key={index}
+              className="inline-block transition-transform duration-300 group-hover:animate-jump"
+              style={{ animationDelay: `${index * 0.1}s`, display: "inline-block" }}
+            >
+              {letter === " " ? "\u00A0" : letter}
+            </span>
+          ))}
         </NavLink>
       </div>
 
@@ -26,7 +37,9 @@ const Header = () => {
                 : "text-stone-400 hover:text-stone-950 hover:underline hover:underline-offset-8"
             }`
           }
-        > Home </NavLink>
+        >
+          Home
+        </NavLink>
 
         <NavLink
           to="/about"
@@ -37,18 +50,21 @@ const Header = () => {
                 : "text-stone-400 hover:text-stone-950 hover:underline hover:underline-offset-8"
             }`
           }
-        > About </NavLink>
+        >
+          About
+        </NavLink>
 
         <a
           href="/Kotoe_Takeda_Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className={`${NavFont} text-stone-400 hover:text-stone-950 hover:underline hover:underline-offset-8`}
-        > Resume </a>
+        >
+          Resume
+        </a>
       </div>
     </div>
   );
 };
-
 
 export default Header;
