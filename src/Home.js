@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import NameModel from "./components/NameModel";
 import Profile_Home from "./images/profile-home.png";
 import Handshake from "./images/robot-human-handshake.jpg";
 
@@ -21,6 +22,9 @@ const Home = () => {
     <>
       <Header />
       <div className="flex flex-col flex-1">
+        <div>
+          <NameModel />
+        </div>
         {/* Intro */}
         <div className= {`flex flex-1 flex-row items-end justify-start pt-40 pb-24`}>
           <p className={IntroFont}>
