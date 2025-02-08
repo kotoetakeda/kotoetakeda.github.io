@@ -7,7 +7,7 @@ const SAQ = () => {
     return (
       <>
         <Header />
-        <div className="flex flex flex-1 justify-center min-h-screen">
+        <div className="flex flex flex-1 justify-center min-h-screen py-[10vh]">
             <p className="header font-normal text-3xl"> 🚧 Under Construction 🚧 </p>
         </div>
         <Footer/>

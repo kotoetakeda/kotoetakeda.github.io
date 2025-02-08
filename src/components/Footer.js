@@ -3,7 +3,7 @@ import { MdEmail } from "react-icons/md";
 import { IoLogoLinkedin, IoLogoGithub } from "react-icons/io5";
 
 const Footer = () => {
-  const FooterFont = "text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl header font-normal no-underline text-stone-950";
+  const FooterFont = "text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl font-playfair font-normal no-underline text-stone-950";
 
   return (
     <div className="flex justify-center items-center gap-7 pt-60">
